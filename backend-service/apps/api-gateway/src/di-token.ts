@@ -1,0 +1,23 @@
+export enum DiToken {
+  ContextService = 'CONTEXT_SERVICE',
+  AccountService = 'ACCOUNT_SERVICE',
+  AssetService = 'ASSET_SERVICE',
+  CategoryService = 'CATEGORY_SERVICE',
+  DeploymentScenarioService = 'DEPLOYMENT_SCENARIO_SERVICE',
+  SystemProfileService = 'SYSTEM_PROFILE_SERVICE',
+  CountermeasureService = 'COUNTERMEASURE_SERVICE',
+  RiskCoreService = 'RISK_CORE_SERVICE',
+  SupplementAptRiskService = 'SUPPLEMENT_APT_RISK_SERVICE',
+  AssessmentResultService = 'ASSESSMENT_RESULT_SERVICE',
+  DashboardService = 'DASHBOARD_SERVICE',
+
+  AccountClientProxy = 'ACCOUNT_CLIENT_PROXY',
+  AssetClientProxy = 'ASSET_CLIENT_PROXY',
+  CategoryClientProxy = 'CATEGORY_CLIENT_PROXY',
+  DeploymentScenarioClientProxy = 'DEPLOYMENT_SCENARIO_CLIENT_PROXY',
+  SystemProfileClientProxy = 'SYSTEM_PROFILE_CLIENT_PROXY',
+  CountermeasureClientProxy = 'COUNTERMEASURE_CLIENT_PROXY',
+  RiskCoreClientProxy = 'RISK_CORE_CLIENT_PROXY',
+  SupplementAptRiskClientProxy = 'SUPPLEMENT_APT_RISK_CLIENT_PROXY',
+  AssessmentResultClientProxy = 'ASSESSMENT_RESULT_CLIENT_PROXY',
+}

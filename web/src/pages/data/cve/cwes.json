@@ -1,0 +1,904 @@
+[{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8875"
+  },
+  "cwe_id": "CWE-843",
+  "cwe_name": "Access of Resource Using Incompatible Type ('Type Confusion')",
+  "description": "The program allocates or initializes a resource such as a pointer, object, or variable using one type, but it later accesses that resource using a type that is incompatible with the original type."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8876"
+  },
+  "cwe_id": "CWE-824",
+  "cwe_name": "Access of Uninitialized Pointer",
+  "description": "The program accesses or uses a pointer that has not been initialized."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8877"
+  },
+  "cwe_id": "CWE-770",
+  "cwe_name": "Allocation of Resources Without Limits or Throttling",
+  "description": "The software allocates a reusable resource or group of resources on behalf of an actor without imposing any restrictions on the size or number of resources that can be allocated, in violation of the intended security policy for that actor."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8878"
+  },
+  "cwe_id": "CWE-670",
+  "cwe_name": "Always-Incorrect Control Flow Implementation",
+  "description": "The code contains a control flow path that does not reflect the algorithm that the path is intended to implement, leading to incorrect behavior any time this path is navigated."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8879"
+  },
+  "cwe_id": "CWE-294",
+  "cwe_name": "Authentication Bypass by Capture-replay",
+  "description": "A capture-replay flaw exists when the design of the software makes it possible for a malicious user to sniff network traffic and bypass authentication by replaying it to the server in question to the same effect as the original message (or with minor changes)."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d887a"
+  },
+  "cwe_id": "CWE-290",
+  "cwe_name": "Authentication Bypass by Spoofing",
+  "description": "This attack-focused weakness is caused by improperly implemented authentication schemes that are subject to spoofing attacks."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d887b"
+  },
+  "cwe_id": "CWE-639",
+  "cwe_name": "Authorization Bypass Through User-Controlled Key",
+  "description": "The system's authorization functionality does not prevent one user from gaining access to another user's data or record by modifying the key value identifying the data."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d887c"
+  },
+  "cwe_id": "CWE-120",
+  "cwe_name": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
+  "description": "The program copies an input buffer to an output buffer without verifying that the size of the input buffer is less than the size of the output buffer, leading to a buffer overflow."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d887d"
+  },
+  "cwe_id": "CWE-312",
+  "cwe_name": "Cleartext Storage of Sensitive Information",
+  "description": "The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d887e"
+  },
+  "cwe_id": "CWE-319",
+  "cwe_name": "Cleartext Transmission of Sensitive Information",
+  "description": "The software transmits sensitive or security-critical data in cleartext in a communication channel that can be sniffed by unauthorized actors."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d887f"
+  },
+  "cwe_id": "CWE-362",
+  "cwe_name": "Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')",
+  "description": "The program contains a code sequence that can run concurrently with other code, and the code sequence requires temporary, exclusive access to a shared resource, but a timing window exists in which the shared resource can be modified by another code sequence that is operating concurrently."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8880"
+  },
+  "cwe_id": "CWE-352",
+  "cwe_name": "Cross-Site Request Forgery (CSRF)",
+  "description": "The web application does not, or can not, sufficiently verify whether a well-formed, valid, consistent request was intentionally provided by the user who submitted the request."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8881"
+  },
+  "cwe_id": "CWE-502",
+  "cwe_name": "Deserialization of Untrusted Data",
+  "description": "The application deserializes untrusted data without sufficiently verifying that the resulting data will be valid."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8882"
+  },
+  "cwe_id": "CWE-425",
+  "cwe_name": "Direct Request ('Forced Browsing')",
+  "description": "The web application does not adequately enforce appropriate authorization on all restricted URLs, scripts, or files."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8883"
+  },
+  "cwe_id": "CWE-369",
+  "cwe_name": "Divide By Zero",
+  "description": "The product divides a value by zero."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8884"
+  },
+  "cwe_id": "CWE-415",
+  "cwe_name": "Double Free",
+  "description": "The product calls free() twice on the same memory address, potentially leading to modification of unexpected memory locations."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8885"
+  },
+  "cwe_id": "CWE-494",
+  "cwe_name": "Download of Code Without Integrity Check",
+  "description": "The product downloads source code or an executable from a remote location and executes the code without sufficiently verifying the origin and integrity of the code."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8886"
+  },
+  "cwe_id": "CWE-834",
+  "cwe_name": "Excessive Iteration",
+  "description": "The software performs an iteration or loop without sufficiently limiting the number of times that the loop is executed."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8887"
+  },
+  "cwe_id": "CWE-668",
+  "cwe_name": "Exposure of Resource to Wrong Sphere",
+  "description": "The product exposes a resource to the wrong control sphere, providing unintended actors with inappropriate access to the resource."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8888"
+  },
+  "cwe_id": "CWE-200",
+  "cwe_name": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "description": "The product exposes sensitive information to an actor that is not explicitly authorized to have access to that information."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8889"
+  },
+  "cwe_id": "CWE-610",
+  "cwe_name": "Externally Controlled Reference to a Resource in Another Sphere",
+  "description": "The product uses an externally controlled name or reference that resolves to a resource that is outside of the intended control sphere."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d888a"
+  },
+  "cwe_id": "CWE-552",
+  "cwe_name": "Files or Directories Accessible to External Parties",
+  "description": "The product makes files or directories accessible to unauthorized actors, even though they should not be."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d888b"
+  },
+  "cwe_id": "CWE-209",
+  "cwe_name": "Generation of Error Message Containing Sensitive Information",
+  "description": "The software generates an error message that includes sensitive information about its environment, users, or associated data."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d888c"
+  },
+  "cwe_id": "CWE-287",
+  "cwe_name": "Improper Authentication",
+  "description": "When an actor claims to have a given identity, the software does not prove or insufficiently proves that the claim is correct."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d888d"
+  },
+  "cwe_id": "CWE-295",
+  "cwe_name": "Improper Certificate Validation",
+  "description": "The software does not validate, or incorrectly validates, a certificate."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d888e"
+  },
+  "cwe_id": "CWE-273",
+  "cwe_name": "Improper Check for Dropped Privileges",
+  "description": "The software attempts to drop privileges but does not check or incorrectly checks to see if the drop succeeded."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d888f"
+  },
+  "cwe_id": "CWE-754",
+  "cwe_name": "Improper Check for Unusual or Exceptional Conditions",
+  "description": "The software does not check or incorrectly checks for unusual or exceptional conditions that are not expected to occur frequently during day to day operation of the software."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8890"
+  },
+  "cwe_id": "CWE-913",
+  "cwe_name": "Improper Control of Dynamically-Managed Code Resources",
+  "description": "The software does not properly restrict reading from or writing to dynamically-managed code resources such as variables, objects, classes, attributes, functions, or executable instructions or statements."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8891"
+  },
+  "cwe_id": "CWE-94",
+  "cwe_name": "Improper Control of Generation of Code ('Code Injection')",
+  "description": "The software constructs all or part of a code segment using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the syntax or behavior of the intended code segment."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8892"
+  },
+  "cwe_id": "CWE-116",
+  "cwe_name": "Improper Encoding or Escaping of Output",
+  "description": "The software prepares a structured message for communication with another component, but encoding or escaping of the data is either missing or done incorrectly. As a result, the intended structure of the message is not preserved."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8893"
+  },
+  "cwe_id": "CWE-924",
+  "cwe_name": "Improper Enforcement of Message Integrity During Transmission in a Communication Channel",
+  "description": "The software establishes a communication channel with an endpoint and receives a message from that endpoint, but it does not sufficiently ensure that the message was not modified during transmission."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8894"
+  },
+  "cwe_id": "CWE-178",
+  "cwe_name": "Improper Handling of Case Sensitivity",
+  "description": "The software does not properly account for differences in case sensitivity when accessing or determining the properties of a resource, leading to inconsistent results."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8895"
+  },
+  "cwe_id": "CWE-755",
+  "cwe_name": "Improper Handling of Exceptional Conditions",
+  "description": "The software does not handle or incorrectly handles an exceptional condition."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8896"
+  },
+  "cwe_id": "CWE-665",
+  "cwe_name": "Improper Initialization",
+  "description": "The software does not initialize or incorrectly initializes a resource, which might leave the resource in an unexpected state when it is accessed or used."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8897"
+  },
+  "cwe_id": "CWE-20",
+  "cwe_name": "Improper Input Validation",
+  "description": "The product receives input or data, but it does         not validate or incorrectly validates that the input has the         properties that are required to process the data safely and         correctly."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8898"
+  },
+  "cwe_id": "CWE-22",
+  "cwe_name": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+  "description": "The software uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the software does not properly neutralize special elements within the pathname that can cause the pathname to resolve to a location that is outside of the restricted directory."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d8899"
+  },
+  "cwe_id": "CWE-59",
+  "cwe_name": "Improper Link Resolution Before File Access ('Link Following')",
+  "description": "The software attempts to access a file based on the filename, but it does not properly prevent that filename from identifying a link or shortcut that resolves to an unintended resource."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d889a"
+  },
+  "cwe_id": "CWE-667",
+  "cwe_name": "Improper Locking",
+  "description": "The software does not properly acquire or release a lock on a resource, leading to unexpected resource state changes and behaviors."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d889b"
+  },
+  "cwe_id": "CWE-88",
+  "cwe_name": "Improper Neutralization of Argument Delimiters in a Command ('Argument Injection')",
+  "description": "The software constructs a string for a command to executed by a separate component in another control sphere, but it does not properly delimit the intended arguments, options, or switches within that command string."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d889c"
+  },
+  "cwe_id": "CWE-1236",
+  "cwe_name": "Improper Neutralization of Formula Elements in a CSV File",
+  "description": "The software saves user-provided information into a Comma-Separated Value (CSV) file, but it does not neutralize or incorrectly neutralizes special elements that could be interpreted as a command when the file is opened by spreadsheet software."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d889d"
+  },
+  "cwe_id": "CWE-79",
+  "cwe_name": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+  "description": "The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d889e"
+  },
+  "cwe_id": "CWE-74",
+  "cwe_name": "Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')",
+  "description": "The software constructs all or part of a command, data structure, or record using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify how it is parsed or interpreted when it is sent to a downstream component."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d889f"
+  },
+  "cwe_id": "CWE-77",
+  "cwe_name": "Improper Neutralization of Special Elements used in a Command ('Command Injection')",
+  "description": "The software constructs all or part of a command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended command when it is sent to a downstream component."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88a0"
+  },
+  "cwe_id": "CWE-917",
+  "cwe_name": "Improper Neutralization of Special Elements used in an Expression Language Statement ('Expression Language Injection')",
+  "description": "The software constructs all or part of an expression language (EL) statement in a Java Server Page (JSP) using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended EL statement before it is executed."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88a1"
+  },
+  "cwe_id": "CWE-78",
+  "cwe_name": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+  "description": "The software constructs all or part of an OS command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended OS command when it is sent to a downstream component."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88a2"
+  },
+  "cwe_id": "CWE-89",
+  "cwe_name": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+  "description": "The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88a3"
+  },
+  "cwe_id": "CWE-281",
+  "cwe_name": "Improper Preservation of Permissions",
+  "description": "The software does not preserve permissions or incorrectly preserves permissions when copying, restoring, or sharing objects, which can cause them to have less restrictive permissions than intended."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88a4"
+  },
+  "cwe_id": "CWE-269",
+  "cwe_name": "Improper Privilege Management",
+  "description": "The software does not properly assign, modify, track, or check privileges for an actor, creating an unintended sphere of control for that actor."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88a5"
+  },
+  "cwe_id": "CWE-212",
+  "cwe_name": "Improper Removal of Sensitive Information Before Storage or Transfer",
+  "description": "The product stores, transfers, or shares a resource that contains sensitive information, but it does not properly remove that information before the product makes the resource available to unauthorized actors."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88a6"
+  },
+  "cwe_id": "CWE-404",
+  "cwe_name": "Improper Resource Shutdown or Release",
+  "description": "The program does not release or incorrectly releases a resource before it is made available for re-use."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88a7"
+  },
+  "cwe_id": "CWE-307",
+  "cwe_name": "Improper Restriction of Excessive Authentication Attempts",
+  "description": "The software does not implement sufficient measures to prevent multiple failed authentication attempts within in a short time frame, making it more susceptible to brute force attacks."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88a8"
+  },
+  "cwe_id": "CWE-119",
+  "cwe_name": "Improper Restriction of Operations within the Bounds of a Memory Buffer",
+  "description": "The software performs operations on a memory buffer, but it can read from or write to a memory location that is outside of the intended boundary of the buffer."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88a9"
+  },
+  "cwe_id": "CWE-920",
+  "cwe_name": "Improper Restriction of Power Consumption",
+  "description": "The software operates in an environment in which power is a limited resource that cannot be automatically replenished, but the software does not properly restrict the amount of power that its operation consumes."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88aa"
+  },
+  "cwe_id": "CWE-776",
+  "cwe_name": "Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')",
+  "description": "The software uses XML documents and allows their structure to be defined with a Document Type Definition (DTD), but it does not properly control the number of recursive definitions of entities."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88ab"
+  },
+  "cwe_id": "CWE-1021",
+  "cwe_name": "Improper Restriction of Rendered UI Layers or Frames",
+  "description": "The web application does not restrict or incorrectly restricts frame objects or UI layers that belong to another application or domain, which can lead to user confusion about which interface the user is interacting with."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88ac"
+  },
+  "cwe_id": "CWE-611",
+  "cwe_name": "Improper Restriction of XML External Entity Reference",
+  "description": "The software processes an XML document that can contain XML entities with URIs that resolve to documents outside of the intended sphere of control, causing the product to embed incorrect documents into its output."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88ad"
+  },
+  "cwe_id": "CWE-662",
+  "cwe_name": "Improper Synchronization",
+  "description": "The software utilizes multiple threads or processes to allow temporary access to a shared resource that can only be exclusive to one process at a time, but it does not properly synchronize these actions, which might cause simultaneous accesses of this resource by multiple threads or processes."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88ae"
+  },
+  "cwe_id": "CWE-129",
+  "cwe_name": "Improper Validation of Array Index",
+  "description": "The product uses untrusted input when calculating or using an array index, but the product does not validate or incorrectly validates the index to ensure the index references a valid position within the array."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88af"
+  },
+  "cwe_id": "CWE-354",
+  "cwe_name": "Improper Validation of Integrity Check Value",
+  "description": "The software does not validate or incorrectly validates the integrity check values or \"checksums\" of a message. This may prevent it from detecting if the data has been modified or corrupted in transmission."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88b0"
+  },
+  "cwe_id": "CWE-347",
+  "cwe_name": "Improper Verification of Cryptographic Signature",
+  "description": "The software does not verify, or incorrectly verifies, the cryptographic signature for data."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88b1"
+  },
+  "cwe_id": "CWE-915",
+  "cwe_name": "Improperly Controlled Modification of Dynamically-Determined Object Attributes",
+  "description": "The software receives input from an upstream component that specifies multiple attributes, properties, or fields that are to be initialized or updated in an object, but it does not properly control which attributes can be modified."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88b2"
+  },
+  "cwe_id": "CWE-326",
+  "cwe_name": "Inadequate Encryption Strength",
+  "description": "The software stores or transmits sensitive data using an encryption scheme that is theoretically sound, but is not strong enough for the level of protection required."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88b3"
+  },
+  "cwe_id": "CWE-838",
+  "cwe_name": "Inappropriate Encoding for Output Context",
+  "description": "The software uses or specifies an encoding when generating output to a downstream component, but the specified encoding is not the same as the encoding that is expected by the downstream component."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88b4"
+  },
+  "cwe_id": "CWE-829",
+  "cwe_name": "Inclusion of Functionality from Untrusted Control Sphere",
+  "description": "The software imports, requires, or includes executable functionality (such as a library) from a source that is outside of the intended control sphere."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88b5"
+  },
+  "cwe_id": "CWE-459",
+  "cwe_name": "Incomplete Cleanup",
+  "description": "The software does not properly \"clean up\" and remove temporary or supporting resources after they have been used."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88b6"
+  },
+  "cwe_id": "CWE-444",
+  "cwe_name": "Inconsistent Interpretation of HTTP Requests ('HTTP Request Smuggling')",
+  "description": "When malformed or abnormal HTTP requests are interpreted by one or more entities in the data flow between the user and the web server, such as a proxy or firewall, they can be interpreted inconsistently, allowing the attacker to \"smuggle\" a request to one device without the other device being aware of it."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88b7"
+  },
+  "cwe_id": "CWE-863",
+  "cwe_name": "Incorrect Authorization",
+  "description": "The software performs an authorization check when an actor attempts to access a resource or perform an action, but it does not correctly perform the check. This allows attackers to bypass intended access restrictions."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88b8"
+  },
+  "cwe_id": "CWE-682",
+  "cwe_name": "Incorrect Calculation",
+  "description": "The software performs a calculation that generates incorrect or unintended results that are later used in security-critical decisions or resource management."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88b9"
+  },
+  "cwe_id": "CWE-131",
+  "cwe_name": "Incorrect Calculation of Buffer Size",
+  "description": "The software does not correctly calculate the size to be used when allocating a buffer, which could lead to a buffer overflow."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88ba"
+  },
+  "cwe_id": "CWE-697",
+  "cwe_name": "Incorrect Comparison",
+  "description": "The software compares two entities in a security-relevant context, but the comparison is incorrect, which may lead to resultant weaknesses."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88bb"
+  },
+  "cwe_id": "CWE-681",
+  "cwe_name": "Incorrect Conversion between Numeric Types",
+  "description": "When converting from one data type to another, such as long to integer, data can be omitted or translated in a way that produces unexpected values. If the resulting values are used in a sensitive context, then dangerous behaviors may occur."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88bc"
+  },
+  "cwe_id": "CWE-276",
+  "cwe_name": "Incorrect Default Permissions",
+  "description": "During installation, installed file permissions are set to allow anyone to modify those files."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88bd"
+  },
+  "cwe_id": "CWE-732",
+  "cwe_name": "Incorrect Permission Assignment for Critical Resource",
+  "description": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88be"
+  },
+  "cwe_id": "CWE-669",
+  "cwe_name": "Incorrect Resource Transfer Between Spheres",
+  "description": "The product does not properly transfer a resource/behavior to another sphere, or improperly imports a resource/behavior from another sphere, in a manner that provides unintended control over that resource."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88bf"
+  },
+  "cwe_id": "CWE-704",
+  "cwe_name": "Incorrect Type Conversion or Cast",
+  "description": "The software does not correctly convert an object, resource, or structure from one type to a different type."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88c0"
+  },
+  "cwe_id": "CWE-335",
+  "cwe_name": "Incorrect Usage of Seeds in Pseudo-Random Number Generator (PRNG)",
+  "description": "The software uses a Pseudo-Random Number Generator (PRNG) that does not correctly manage seeds."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88c1"
+  },
+  "cwe_id": "CWE-1188",
+  "cwe_name": "Insecure Default Initialization of Resource",
+  "description": "The software initializes or sets a resource with a default that is intended to be changed by the administrator, but the default is not secure."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88c2"
+  },
+  "cwe_id": "CWE-922",
+  "cwe_name": "Insecure Storage of Sensitive Information",
+  "description": "The software stores sensitive information without properly limiting read or write access by unauthorized actors."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88c3"
+  },
+  "cwe_id": "CWE-532",
+  "cwe_name": "Insertion of Sensitive Information into Log File",
+  "description": "Information written to log files can be of a sensitive nature and give valuable guidance to an attacker or expose sensitive user information."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88c4"
+  },
+  "cwe_id": "CWE-331",
+  "cwe_name": "Insufficient Entropy",
+  "description": "The software uses an algorithm or scheme that produces insufficient entropy, leaving patterns or clusters of values that are more likely to occur than others."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88c5"
+  },
+  "cwe_id": "NVD-CWE-noinfo",
+  "cwe_name": "Insufficient Information",
+  "description": "There is insufficient information about the issue to classify it; details are unkown or unspecified."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88c6"
+  },
+  "cwe_id": "CWE-613",
+  "cwe_name": "Insufficient Session Expiration",
+  "description": "According to WASC, \"Insufficient Session Expiration is when a web site permits an attacker to reuse old session credentials or session IDs for authorization.\""
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88c7"
+  },
+  "cwe_id": "CWE-345",
+  "cwe_name": "Insufficient Verification of Data Authenticity",
+  "description": "The software does not sufficiently verify the origin or authenticity of data, in a way that causes it to accept invalid data."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88c8"
+  },
+  "cwe_id": "CWE-522",
+  "cwe_name": "Insufficiently Protected Credentials",
+  "description": "The product transmits or stores authentication credentials, but it uses an insecure method that is susceptible to unauthorized interception and/or retrieval."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88c9"
+  },
+  "cwe_id": "CWE-190",
+  "cwe_name": "Integer Overflow or Wraparound",
+  "description": "The software performs a calculation that can produce an integer overflow or wraparound, when the logic assumes that the resulting value will always be larger than the original value. This can introduce other weaknesses when the calculation is used for resource management or execution control."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88ca"
+  },
+  "cwe_id": "CWE-191",
+  "cwe_name": "Integer Underflow (Wrap or Wraparound)",
+  "description": "The product subtracts one value from another, such that the result is less than the minimum allowable integer value, which produces a value that is not equal to the correct result."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88cb"
+  },
+  "cwe_id": "CWE-436",
+  "cwe_name": "Interpretation Conflict",
+  "description": "Product A handles inputs or steps differently than Product B, which causes A to perform incorrect actions based on its perception of B's state."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88cc"
+  },
+  "cwe_id": "CWE-835",
+  "cwe_name": "Loop with Unreachable Exit Condition ('Infinite Loop')",
+  "description": "The program contains an iteration or loop with an exit condition that cannot be reached, i.e., an infinite loop."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88cd"
+  },
+  "cwe_id": "CWE-306",
+  "cwe_name": "Missing Authentication for Critical Function",
+  "description": "The software does not perform any authentication for functionality that requires a provable user identity or consumes a significant amount of resources."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88ce"
+  },
+  "cwe_id": "CWE-862",
+  "cwe_name": "Missing Authorization",
+  "description": "The software does not perform an authorization check when an actor attempts to access a resource or perform an action."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88cf"
+  },
+  "cwe_id": "CWE-311",
+  "cwe_name": "Missing Encryption of Sensitive Data",
+  "description": "The software does not encrypt sensitive or critical information before storage or transmission."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88d0"
+  },
+  "cwe_id": "CWE-909",
+  "cwe_name": "Missing Initialization of Resource",
+  "description": "The software does not initialize a critical resource."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88d1"
+  },
+  "cwe_id": "CWE-401",
+  "cwe_name": "Missing Release of Memory after Effective Lifetime",
+  "description": "The software does not sufficiently track and release allocated memory after it has been used, which slowly consumes remaining memory."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88d2"
+  },
+  "cwe_id": "CWE-772",
+  "cwe_name": "Missing Release of Resource after Effective Lifetime",
+  "description": "The software does not release a resource after its effective lifetime has ended, i.e., after the resource is no longer needed."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88d3"
+  },
+  "cwe_id": "CWE-476",
+  "cwe_name": "NULL Pointer Dereference",
+  "description": "A NULL pointer dereference occurs when the application dereferences a pointer that it expects to be valid, but is NULL, typically causing a crash or exit."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88d4"
+  },
+  "cwe_id": "CWE-203",
+  "cwe_name": "Observable Differences in Behavior to Error Inputs",
+  "description": "Differences in device behavior to an error input may be used by an attacker to gather security-relevant information about the device. The information may be as simple as whether a particular operation was successful."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88d5"
+  },
+  "cwe_id": "CWE-193",
+  "cwe_name": "Off-by-one Error",
+  "description": "A product calculates or uses an incorrect maximum or minimum value that is 1 more, or 1 less, than the correct value."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88d6"
+  },
+  "cwe_id": "CWE-672",
+  "cwe_name": "Operation on a Resource after Expiration or Release",
+  "description": "The software uses, accesses, or otherwise operates on a resource after that resource has been expired, released, or revoked."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88d7"
+  },
+  "cwe_id": "CWE-346",
+  "cwe_name": "Origin Validation Error",
+  "description": "The software does not properly verify that the source of data or communication is valid."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88d8"
+  },
+  "cwe_id": "NVD-CWE-Other",
+  "cwe_name": "Other",
+  "description": "NVD is only using a subset of CWE for mapping instead of the entire CWE, and the weakness type is not covered by that subset."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88d9"
+  },
+  "cwe_id": "CWE-125",
+  "cwe_name": "Out-of-bounds Read",
+  "description": "The software reads data past the end, or before the beginning, of the intended buffer."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88da"
+  },
+  "cwe_id": "CWE-787",
+  "cwe_name": "Out-of-bounds Write",
+  "description": "The software writes data past the end, or before the beginning, of the intended buffer."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88db"
+  },
+  "cwe_id": "CWE-617",
+  "cwe_name": "Reachable Assertion",
+  "description": "The product contains an assert() or similar statement that can be triggered by an attacker, which leads to an application exit or other behavior that is more severe than necessary."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88dc"
+  },
+  "cwe_id": "CWE-763",
+  "cwe_name": "Release of Invalid Pointer or Reference",
+  "description": "The application attempts to return a memory resource to the system, but calls the wrong release function or calls the appropriate release function incorrectly."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88dd"
+  },
+  "cwe_id": "CWE-565",
+  "cwe_name": "Reliance on Cookies without Validation and Integrity Checking",
+  "description": "The application relies on the existence or values of cookies when performing security-critical operations, but it does not properly ensure that the setting is valid for the associated user."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88de"
+  },
+  "cwe_id": "CWE-918",
+  "cwe_name": "Server-Side Request Forgery (SSRF)",
+  "description": "The web server receives a URL or similar request from an upstream component and retrieves the contents of this URL, but it does not sufficiently ensure that the request is being sent to the expected destination."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88df"
+  },
+  "cwe_id": "CWE-384",
+  "cwe_name": "Session Fixation",
+  "description": "Authenticating a user, or otherwise establishing a new user session, without invalidating any existing session identifier gives an attacker the opportunity to steal authenticated sessions."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88e0"
+  },
+  "cwe_id": "CWE-367",
+  "cwe_name": "Time-of-check Time-of-use (TOCTOU) Race Condition",
+  "description": "The software checks the state of a resource before using that resource, but the resource's state can change between the check and the use in a way that invalidates the results of the check. This can cause the software to perform invalid actions when the resource is in an unexpected state."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88e1"
+  },
+  "cwe_id": "CWE-252",
+  "cwe_name": "Unchecked Return Value",
+  "description": "The software does not check the return value from a method or function, which can prevent it from detecting unexpected states and conditions."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88e2"
+  },
+  "cwe_id": "CWE-674",
+  "cwe_name": "Uncontrolled Recursion",
+  "description": "The product does not properly control the amount of recursion that takes place, which consumes excessive resources, such as allocated memory or the program stack."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88e3"
+  },
+  "cwe_id": "CWE-400",
+  "cwe_name": "Uncontrolled Resource Consumption",
+  "description": "The software does not properly control the allocation and maintenance of a limited resource, thereby enabling an actor to influence the amount of resources consumed, eventually leading to the exhaustion of available resources."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88e4"
+  },
+  "cwe_id": "CWE-427",
+  "cwe_name": "Uncontrolled Search Path Element",
+  "description": "The product uses a fixed or controlled search path to find resources, but one or more locations in that path can be under the control of unintended actors."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88e5"
+  },
+  "cwe_id": "CWE-428",
+  "cwe_name": "Unquoted Search Path or Element",
+  "description": "The product uses a search path that contains an unquoted element, in which the element contains whitespace or other separators. This can cause the product to access resources in a parent path."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88e6"
+  },
+  "cwe_id": "CWE-434",
+  "cwe_name": "Unrestricted Upload of File with Dangerous Type",
+  "description": "The software allows the attacker to upload or transfer files of dangerous types that can be automatically processed within the product's environment."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88e7"
+  },
+  "cwe_id": "CWE-426",
+  "cwe_name": "Untrusted Search Path",
+  "description": "The application searches for critical resources using an externally-supplied search path that can point to resources that are not under the application's direct control."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88e8"
+  },
+  "cwe_id": "CWE-601",
+  "cwe_name": "URL Redirection to Untrusted Site ('Open Redirect')",
+  "description": "A web application accepts a user-controlled input that specifies a link to an external site, and uses that link in a Redirect. This simplifies phishing attacks."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88e9"
+  },
+  "cwe_id": "CWE-416",
+  "cwe_name": "Use After Free",
+  "description": "Referencing memory after it has been freed can cause a program to crash, use unexpected values, or execute code."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88ea"
+  },
+  "cwe_id": "CWE-327",
+  "cwe_name": "Use of a Broken or Risky Cryptographic Algorithm",
+  "description": "The use of a broken or risky cryptographic algorithm is an unnecessary risk that may result in the exposure of sensitive information."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88eb"
+  },
+  "cwe_id": "CWE-338",
+  "cwe_name": "Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)",
+  "description": "The product uses a Pseudo-Random Number Generator (PRNG) in a security context, but the PRNG's algorithm is not cryptographically strong."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88ec"
+  },
+  "cwe_id": "CWE-134",
+  "cwe_name": "Use of Externally-Controlled Format String",
+  "description": "The software uses a function that accepts a format string as an argument, but the format string originates from an external source."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88ed"
+  },
+  "cwe_id": "CWE-470",
+  "cwe_name": "Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')",
+  "description": "The application uses external input with reflection to select which classes or code to use, but it does not sufficiently prevent the input from selecting improper classes or code."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88ee"
+  },
+  "cwe_id": "CWE-798",
+  "cwe_name": "Use of Hard-coded Credentials",
+  "description": "The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88ef"
+  },
+  "cwe_id": "CWE-706",
+  "cwe_name": "Use of Incorrectly-Resolved Name or Reference",
+  "description": "The software uses a name or reference to access a resource, but the name/reference resolves to a resource that is outside of the intended control sphere."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88f0"
+  },
+  "cwe_id": "CWE-330",
+  "cwe_name": "Use of Insufficiently Random Values",
+  "description": "The software uses insufficiently random numbers or values in a security context that depends on unpredictable numbers."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88f1"
+  },
+  "cwe_id": "CWE-916",
+  "cwe_name": "Use of Password Hash With Insufficient Computational Effort",
+  "description": "The software generates a hash for a password, but it uses a scheme that does not provide a sufficient level of computational effort that would make password cracking attacks infeasible or expensive."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88f2"
+  },
+  "cwe_id": "CWE-908",
+  "cwe_name": "Use of Uninitialized Resource",
+  "description": "The software uses or accesses a resource that has not been initialized."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88f3"
+  },
+  "cwe_id": "CWE-640",
+  "cwe_name": "Weak Password Recovery Mechanism for Forgotten Password",
+  "description": "The software contains a mechanism for users to recover or change their passwords without knowing the original password, but the mechanism is weak."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88f4"
+  },
+  "cwe_id": "CWE-521",
+  "cwe_name": "Weak Password Requirements",
+  "description": "The product does not require that users should have strong passwords, which makes it easier for attackers to compromise user accounts."
+},{
+  "_id": {
+    "$oid": "617cb88078e0c1cc471d88f5"
+  },
+  "cwe_id": "CWE-91",
+  "cwe_name": "XML Injection (aka Blind XPath Injection)",
+  "description": "The software does not properly neutralize special elements that are used in XML, allowing attackers to modify the syntax, content, or commands of the XML before it is processed by an end system."
+}]

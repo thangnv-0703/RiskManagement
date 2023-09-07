@@ -1,0 +1,43 @@
+version: '3.3'
+
+networks:
+  docker-net:
+    driver: bridge
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    env_file:
+      - ${SERVICE_PATH}/.env.docker
+    container_name: ${COMPOSE_PROJECT_NAME}_rabbitmq
+    # environment:
+    #   - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+    #   - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
+    hostname: rabbitmq
+    volumes:
+      - ./data/rabbitmq:/var/lib/rabbitmq
+    restart: always
+    ports:
+      - 5672:5672
+      - 15672:15672
+    networks:
+      - docker-net
+  mongodb:
+    image: mongo:4.4-rc
+    env_file:
+      - .env
+      - ${SERVICE_PATH}/.env.docker
+    # environment:
+    #   - MONGO_INITDB_ROOT_USERNAME=${DB_USERNAME}
+    #   - MONGO_INITDB_ROOT_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./data-docker/mongodb:/data/db
+    restart: always
+    container_name: ${COMPOSE_PROJECT_NAME}_mongodb
+    ports:
+      - ${DB_PORT:-27017}:27017
+      # - 27018:27018
+    # logging:
+    #   driver: 'syslog'
+    networks:
+      - docker-net

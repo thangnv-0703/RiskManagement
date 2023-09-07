@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was created by ACADEMIC version of SMILE -->
+<smile version="1.0" id="Unnamed" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Node_0">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>1 0</probabilities>
+		</cpt>
+		<cpt id="Node_9" dynamic="plate">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0</parents>
+			<probabilities>0.2 0.8 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_10" dynamic="plate">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0</parents>
+			<probabilities>0.86 0.14 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_8" dynamic="plate">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_9 Node_10</parents>
+			<probabilities>1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_2" dynamic="plate">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0 Node_8</parents>
+			<probabilities>0.99 0.01 0.9 0.1 0.9 0.1 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_3" dynamic="plate">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0 Node_8</parents>
+			<probabilities>1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_4" dynamic="plate">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0 Node_8</parents>
+			<probabilities>0.96 0.04 0.8 0.2 0.8 0.2 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_5" dynamic="plate">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0 Node_8</parents>
+			<probabilities>0.6279 0.3721 0.39 0.61 0.39 0.61 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_6" dynamic="plate">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0 Node_8</parents>
+			<probabilities>0.6279 0.3721 0.39 0.61 0.39 0.61 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_7" dynamic="plate">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0 Node_8</parents>
+			<probabilities>0.6279 0.3721 0.39 0.61 0.39 0.61 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_1" dynamic="plate">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_2 Node_3 Node_4 Node_5 Node_6 Node_7</parents>
+			<probabilities>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_12" dynamic="plate">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0 Node_8</parents>
+			<probabilities>0.6279 0.3721 0.39 0.61 0.39 0.61 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_13" dynamic="plate">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0 Node_8</parents>
+			<probabilities>0.6279 0.3721 0.39 0.61 0.39 0.61 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_14" dynamic="plate">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0 Node_8</parents>
+			<probabilities>0.6279 0.3721 0.39 0.61 0.39 0.61 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_15" dynamic="plate">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0 Node_8</parents>
+			<probabilities>0.6279 0.3721 0.39 0.61 0.39 0.61 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_11" dynamic="plate">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_12 Node_13 Node_14 Node_15</parents>
+			<probabilities>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_16" dynamic="plate">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_1 Node_8 Node_11</parents>
+			<probabilities>1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<dynamic numslices="2">
+		<cpt id="Node_9" order="1">
+			<parents>Node_9</parents>
+			<probabilities>1 0 0.2 0.8 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_10" order="1">
+			<parents>Node_10</parents>
+			<probabilities>1 0 0.86 0.14 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_2" order="1">
+			<parents>Node_2</parents>
+			<probabilities>1 0 0.99 0.01 1 0 0.9 0.1 1 0 0.9 0.1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_3" order="1">
+			<parents>Node_3</parents>
+			<probabilities>1 0 1 0 1 0 1 0 1 0 1 0 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_4" order="1">
+			<parents>Node_4</parents>
+			<probabilities>1 0 0.96 0.04 1 0 0.8 0.2 1 0 0.8 0.2 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_5" order="1">
+			<parents>Node_5</parents>
+			<probabilities>1 0 0.6279 0.3721 1 0 0.39 0.61 1 0 0.39 0.61 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_6" order="1">
+			<parents>Node_6</parents>
+			<probabilities>1 0 0.6279 0.3721 1 0 0.39 0.61 1 0 0.39 0.61 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_7" order="1">
+			<parents>Node_7</parents>
+			<probabilities>1 0 0.6279 0.3721 1 0 0.39 0.61 1 0 0.39 0.61 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_12" order="1">
+			<parents>Node_12</parents>
+			<probabilities>1 0 0.6279 0.3721 1 0 0.39 0.61 1 0 0.39 0.61 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_13" order="1">
+			<parents>Node_13</parents>
+			<probabilities>1 0 0.6279 0.3721 1 0 0.39 0.61 1 0 0.39 0.61 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_14" order="1">
+			<parents>Node_14</parents>
+			<probabilities>1 0 0.6279 0.3721 1 0 0.39 0.61 1 0 0.39 0.61 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_15" order="1">
+			<parents>Node_15</parents>
+			<probabilities>1 0 0.6279 0.3721 1 0 0.39 0.61 1 0 0.39 0.61 0 1 0 1</probabilities>
+		</cpt>
+	</dynamic>
+	<extensions>
+		<genie version="1.0" app="SMILE_ACADEMIC 2.0.10@8fc4651c837e" name="Unnamed">
+			<plate leftwidth="120" rightwidth="120">20 20 620 320</plate>
+			<node id="Node_0">
+				<name>Attacker_internet_0</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_1">
+				<name>Asset_Database on Web Server_1</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_2">
+				<name>Vul_CVE-2022-27385_6450bd0bb71968d0d9cf4d1c</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_3">
+				<name>Vul_CVE-2022-27449_6450bd0bb71968d0d9cf4d1c</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_4">
+				<name>Vul_CVE-2017-15365_6450bd0bb71968d0d9cf4d1c</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_5">
+				<name>Vul_CVE-2022-31621_6450bd0bb71968d0d9cf4d1c</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_6">
+				<name>Vul_CVE-2022-31624_6450bd0bb71968d0d9cf4d1c</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_7">
+				<name>Vul_CVE-2021-46667_6450bd0bb71968d0d9cf4d1c</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_8">
+				<name>Asset_Apache Web Server_8</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_9">
+				<name>Vul_CVE-2022-29885_64605d26303473f151ff9009</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_10">
+				<name>Vul_CVE-2022-34305_64605d26303473f151ff9009</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_11">
+				<name>Asset_OS on Web Server_11</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_12">
+				<name>Vul_CVE-2021-27364_6477272803c4f00f023460aa</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_13">
+				<name>Vul_CVE-2021-3444_6477272803c4f00f023460aa</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_14">
+				<name>Vul_CVE-2021-3493_6477272803c4f00f023460aa</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_15">
+				<name>Vul_CVE-2021-3492_6477272803c4f00f023460aa</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_16">
+				<name>System_plate</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Unnamed" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Node_0">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>1 0</probabilities>
+		</cpt>
+		<cpt id="Node_16">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0</parents>
+			<probabilities>0.86 0.14 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_17">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0</parents>
+			<probabilities>0.86 0.14 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_15">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_16 Node_17</parents>
+			<probabilities>1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_13">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0 Node_15</parents>
+			<probabilities>1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_14">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0 Node_15</parents>
+			<probabilities>0.9804 0.0196 0.86 0.14 0.86 0.14 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_12">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_13 Node_14</parents>
+			<probabilities>1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_5">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_12</parents>
+			<probabilities>0.2 0.8 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_4">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_5</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_2">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_4</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_3">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_4</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_1">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_2 Node_3</parents>
+			<probabilities>1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_7">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_12 Node_15</parents>
+			<probabilities>1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_8">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_12 Node_15</parents>
+			<probabilities>1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_9">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_12 Node_15</parents>
+			<probabilities>0.9804 0.0196 0.86 0.14 0.86 0.14 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_6">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_7 Node_8 Node_9</parents>
+			<probabilities>1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_11">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_4</parents>
+			<probabilities>0.47 0.53 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_10">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_11</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_38">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Node_18">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_1 Node_4 Node_10 Node_38</parents>
+			<probabilities>1 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1 0 1 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 4.0.2423.0 ACADEMIC" name="Unnamed unrolled">
+			<node id="Node_0">
+				<name>APT group</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>125 360 201 392</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_16">
+				<name>CVE-2022-21843</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>292 520 368 556</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_17">
+				<name>CVE-2022-21848</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>290 363 366 399</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_15">
+				<name>computer window</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>450 430 526 466</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_13">
+				<name>CVE-2022-20698</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>450 118 526 154</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_14">
+				<name>CVE-2021-3737</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>525 218 601 254</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_12">
+				<name>computer ubuntu</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>642 119 718 155</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_5">
+				<name>CVE-2022-29885</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>640 430 716 466</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_4">
+				<name>web server</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>809 434 885 470</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_2">
+				<name>CVE-2022-27385</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1002 530 1078 566</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_3">
+				<name>CVE-2022-27449</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1003 350 1079 386</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_1">
+				<name>database server</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1170 350 1246 386</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_7">
+				<name>CVE-2022-22719</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>832 57 908 93</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_8">
+				<name>CVE-2022-22720</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>824 187 900 223</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_9">
+				<name>CVE-2022-22721</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>826 302 902 338</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_6">
+				<name>honeypot server</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1010 191 1086 227</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_11">
+				<name>CVE-2020-36617</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>810 637 886 673</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_10">
+				<name>Asset_SFTP server_12</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1164 637 1240 673</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_38">
+				<name>System_previous</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1339 703 1415 739</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_18">
+				<name>System_current</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1339 436 1415 472</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

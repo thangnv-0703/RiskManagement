@@ -1,0 +1,4 @@
+from bayes.model.deployment_scenario.deployment_scenario_BN import DeploymentScenarioBN
+from bayes.model.deployment_scenario.deployment_scenario_DBN import DeploymentScenarioDBN
+from bayes.model.deployment_scenario.deployment_scenario_network import DeploymentScenarioNetwork
+from bayes.model.constant import *

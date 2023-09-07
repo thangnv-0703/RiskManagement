@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was created by ACADEMIC version of SMILE -->
+<smile version="1.0" id="Unnamed" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Node_0">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>1 0</probabilities>
+		</cpt>
+		<cpt id="Node_2">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0</parents>
+			<probabilities>0.171 0.829 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_1">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_2</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_4">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_1</parents>
+			<probabilities>0.855 0.145 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_5">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_1</parents>
+			<probabilities>0.855 0.145 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_3">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_4 Node_5</parents>
+			<probabilities>1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_6">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_1 Node_3</parents>
+			<probabilities>1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_7">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Node_8">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Node_9">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Node_10">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Node_11">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<equation id="Node_12">
+			<parents>Node_8 Node_9 Node_11</parents>
+			<definition lower="0" upper="1">Node_12=TruncNormal((1*Node_8+1*Node_9+1*Node_11)/3,0.001,0,1)</definition>
+			<discretization>
+				<interval upper="0.2" />
+				<interval upper="0.4" />
+				<interval upper="0.6" />
+				<interval upper="0.8" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="Node_13">
+			<parents>Node_7 Node_10</parents>
+			<definition lower="0" upper="1">Node_13=TruncNormal((1*Node_7+1*Node_10)/2,0.001,0,1)</definition>
+			<discretization>
+				<interval upper="0.2" />
+				<interval upper="0.4" />
+				<interval upper="0.6" />
+				<interval upper="0.8" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="Node_14">
+			<parents>Node_12 Node_13</parents>
+			<definition lower="0" upper="1">Node_14=TruncNormal((1*Node_12+1*Node_13)/2,0.001,0,1)</definition>
+			<discretization>
+				<interval upper="0.5" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<cpt id="Node_15">
+			<state id="not_enough" />
+			<state id="enough" />
+			<parents>Node_14</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Node_16">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Node_17">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Node_18">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Node_19">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Node_20">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<equation id="Node_21">
+			<parents>Node_16 Node_19</parents>
+			<definition lower="0" upper="1">Node_21=TruncNormal((2*Node_16+1*Node_19)/3,0.001,0,1)</definition>
+			<discretization>
+				<interval upper="0.2" />
+				<interval upper="0.4" />
+				<interval upper="0.6" />
+				<interval upper="0.8" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="Node_22">
+			<parents>Node_17 Node_18 Node_20</parents>
+			<definition lower="0" upper="1">Node_22=TruncNormal((2*Node_17+3*Node_18+5*Node_20)/10,0.001,0,1)</definition>
+			<discretization>
+				<interval upper="0.2" />
+				<interval upper="0.4" />
+				<interval upper="0.6" />
+				<interval upper="0.8" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="Node_23">
+			<parents>Node_21 Node_22</parents>
+			<definition lower="0" upper="1">Node_23=TruncNormal((1*Node_21+1*Node_22)/2,0.001,0,1)</definition>
+			<discretization>
+				<interval upper="0.5" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<cpt id="Node_24">
+			<state id="not_effective" />
+			<state id="effective" />
+			<parents>Node_23</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Node_25">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_6 Node_15 Node_24</parents>
+			<probabilities>1 0 0 1 1 0 1 0 0 1 0 1 0 1 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE_ACADEMIC 2.0.10@8fc4651c837e" name="Unnamed">
+			<node id="Node_0">
+				<name>Attacker_internet_0</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_1">
+				<name>Asset_Apache Web Server_1</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_2">
+				<name>Vul_CVE-2022-29885_64605d26303473f151ff9009</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_3">
+				<name>Asset_Database on Web Server_3</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_4">
+				<name>Vul_CVE-2022-27385_6450bd0bb71968d0d9cf4d1c</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_5">
+				<name>Vul_CVE-2022-27449_6450bd0bb71968d0d9cf4d1c</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_6">
+				<name>System_present</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_7">
+				<name>ElapsedTime</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_8">
+				<name>SpecialistExpertise</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_9">
+				<name>KnowledgeOfSystem</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_10">
+				<name>WindowOfOpportunity</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_11">
+				<name>RequiredEquipmentAndTools</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_12">
+				<name>Mean</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_13">
+				<name>Opportunity</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_14">
+				<name>attacker_capability</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_15">
+				<name>attacker_capability_cpt</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_16">
+				<name>SecurityAwarenessTraining</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_17">
+				<name>SecurityMonitoring</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_18">
+				<name>VulnerabilityManagement</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_19">
+				<name>IncidentResponsePlan</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_20">
+				<name>LogManagement</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_21">
+				<name>Organizational</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_22">
+				<name>Technical</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_23">
+				<name>effectiveness_defender</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_24">
+				<name>effectiveness_defend_cpt</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Node_25">
+				<name>APT_risk_cpt</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

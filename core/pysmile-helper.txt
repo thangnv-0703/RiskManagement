@@ -1,0 +1,2444 @@
+Help on class Network in module pysmile:
+
+Help on method __copy__ in module pysmile:
+
+__copy__(...) method of pysmile.Network instance
+    __copy__(self: pysmile.Network) -> pysmile.Network
+
+Help on method __deepcopy__ in module pysmile:
+
+__deepcopy__(...) method of pysmile.Network instance
+    __deepcopy__(self: pysmile.Network) -> pysmile.Network
+
+Help on method-wrapper:
+
+__delattr__ = <method-wrapper '__delattr__' of pysmile.Network object>
+    Implement delattr(self, name).
+
+Help on built-in function __dir__:
+
+__dir__() method of pysmile.Network instance
+    Default dir() implementation.
+
+Help on method-wrapper:
+
+__eq__ = <method-wrapper '__eq__' of pysmile.Network object>
+    Return self==value.
+
+Help on built-in function __format__:
+
+__format__(format_spec, /) method of pysmile.Network instance
+    Default object formatter.
+
+Help on method-wrapper:
+
+__ge__ = <method-wrapper '__ge__' of pysmile.Network object>
+    Return self>=value.
+
+Help on method-wrapper:
+
+__getattribute__ = <method-wrapper '__getattribute__' of pysmile.Network object>
+    Return getattr(self, name).
+
+Help on method-wrapper:
+
+__gt__ = <method-wrapper '__gt__' of pysmile.Network object>
+    Return self>value.
+
+Help on method-wrapper:
+
+__hash__ = <method-wrapper '__hash__' of pysmile.Network object>
+    Return hash(self).
+
+Help on method __init__ in module pysmile:
+
+__init__(...) method of pysmile.Network instance
+    __init__(*args, **kwargs)
+    Overloaded function.
+    
+    1. __init__(self: pysmile.Network) -> None
+    
+    2. __init__(self: pysmile.Network, arg0: pysmile.Network) -> None
+
+Help on built-in function __init_subclass__:
+
+__init_subclass__(...) method of pybind11_builtins.pybind11_type instance
+    This method is called when a class is subclassed.
+    
+    The default implementation does nothing. It may be
+    overridden to extend subclasses.
+
+Help on method-wrapper:
+
+__le__ = <method-wrapper '__le__' of pysmile.Network object>
+    Return self<=value.
+
+Help on method-wrapper:
+
+__lt__ = <method-wrapper '__lt__' of pysmile.Network object>
+    Return self<value.
+
+Help on method-wrapper:
+
+__ne__ = <method-wrapper '__ne__' of pysmile.Network object>
+    Return self!=value.
+
+Help on built-in function __new__:
+
+__new__(*args, **kwargs) method of pybind11_builtins.pybind11_type instance
+    Create and return a new object.  See help(type) for accurate signature.
+
+Help on built-in function __reduce__:
+
+__reduce__() method of pysmile.Network instance
+    Helper for pickle.
+
+Help on built-in function __reduce_ex__:
+
+__reduce_ex__(protocol, /) method of pysmile.Network instance
+    Helper for pickle.
+
+Help on method-wrapper:
+
+__repr__ = <method-wrapper '__repr__' of pysmile.Network object>
+    Return repr(self).
+
+Help on method-wrapper:
+
+__setattr__ = <method-wrapper '__setattr__' of pysmile.Network object>
+    Implement setattr(self, name, value).
+
+Help on built-in function __sizeof__:
+
+__sizeof__() method of pysmile.Network instance
+    Size of object in memory, in bytes.
+
+Help on method-wrapper:
+
+__str__ = <method-wrapper '__str__' of pysmile.Network object>
+    Return str(self).
+
+Help on built-in function __subclasshook__:
+
+__subclasshook__(...) method of pybind11_builtins.pybind11_type instance
+    Abstract classes can override this to customize issubclass().
+    
+    This is invoked early on by abc.ABCMeta.__subclasscheck__().
+    It should return True, False or NotImplemented.  If it returns
+    NotImplemented, the normal algorithm is used.  Otherwise, it
+    overrides the normal algorithm (and the outcome is cached).
+
+Help on method add_arc in module pysmile:
+
+add_arc(...) method of pysmile.Network instance
+    add_arc(*args, **kwargs)
+    Overloaded function.
+    
+    1. add_arc(self: pysmile.Network, parent_handle: int, child_handle: int) -> None
+    
+    Add arc by node handles
+    
+    2. add_arc(self: pysmile.Network, parent_id: str, child_id: str) -> None
+    
+    Add arc by node IDs
+
+Help on method add_cost_arc in module pysmile:
+
+add_cost_arc(...) method of pysmile.Network instance
+    add_cost_arc(*args, **kwargs)
+    Overloaded function.
+    
+    1. add_cost_arc(self: pysmile.Network, parent_handle: int, child_handle: int) -> None
+    
+    2. add_cost_arc(self: pysmile.Network, parent_id: str, child_id: str) -> None
+
+Help on method add_node in module pysmile:
+
+add_node(...) method of pysmile.Network instance
+    add_node(*args, **kwargs)
+    Overloaded function.
+    
+    1. add_node(self: pysmile.Network, node_type: pysmile.NodeType, node_id: str) -> int
+    
+    Add node with specified type and ID; returns created node handle
+    
+    2. add_node(self: pysmile.Network, node_type: pysmile.NodeType) -> int
+    
+    Add node with specified type and default ID; returns created node handle
+    
+    3. add_node(self: pysmile.Network) -> int
+    
+    Add node with default type and default ID; returns created node handle
+
+Help on method add_outcome in module pysmile:
+
+add_outcome(...) method of pysmile.Network instance
+    add_outcome(*args, **kwargs)
+    Overloaded function.
+    
+    1. add_outcome(self: pysmile.Network, node_handle: int, outcome_id: str) -> None
+    
+    Add Outcome by node handle
+    
+    2. add_outcome(self: pysmile.Network, node_id: str, outcome_id: str) -> None
+    
+    Add Outcome by node ID
+
+Help on method add_submodel in module pysmile:
+
+add_submodel(...) method of pysmile.Network instance
+    add_submodel(*args, **kwargs)
+    Overloaded function.
+    
+    1. add_submodel(self: pysmile.Network, parent_handle: int, id: str) -> int
+    
+    2. add_submodel(self: pysmile.Network, parent_id: str, id: str) -> int
+
+Help on method add_temporal_arc in module pysmile:
+
+add_temporal_arc(...) method of pysmile.Network instance
+    add_temporal_arc(*args, **kwargs)
+    Overloaded function.
+    
+    1. add_temporal_arc(self: pysmile.Network, parent_handle: int, child_handle: int, order: int) -> None
+    
+    2. add_temporal_arc(self: pysmile.Network, parent_id: str, child_id: str, order: int) -> None
+
+Help on method annealed_map in module pysmile:
+
+annealed_map(...) method of pysmile.Network instance
+    annealed_map(*args, **kwargs)
+    Overloaded function.
+    
+    1. annealed_map(self: pysmile.Network, map_nodes: List[int], tuning: pysmile.AnnealedMapTuning) -> pysmile.AnnealedMapResults
+    
+    2. annealed_map(self: pysmile.Network, map_nodes: List[str], tuning: pysmile.AnnealedMapTuning) -> pysmile.AnnealedMapResults
+    
+    3. annealed_map(self: pysmile.Network, map_nodes: List[int]) -> pysmile.AnnealedMapResults
+    
+    4. annealed_map(self: pysmile.Network, map_nodes: List[str]) -> pysmile.AnnealedMapResults
+
+Help on method calc_sensitivity in module pysmile:
+
+calc_sensitivity(...) method of pysmile.Network instance
+    calc_sensitivity(self: pysmile.Network) -> pysmile.SensitivityResults
+
+Help on method clear_all_evidence in module pysmile:
+
+clear_all_evidence(...) method of pysmile.Network instance
+    clear_all_evidence(self: pysmile.Network) -> None
+    
+    Clear all evidence
+
+Help on method clear_all_targets in module pysmile:
+
+clear_all_targets(...) method of pysmile.Network instance
+    clear_all_targets(self: pysmile.Network) -> None
+    
+    Clear all targets
+
+Help on method clear_evidence in module pysmile:
+
+clear_evidence(...) method of pysmile.Network instance
+    clear_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. clear_evidence(self: pysmile.Network, node_handle: int) -> None
+    
+    Clear node evidence by node handle
+    
+    2. clear_evidence(self: pysmile.Network, node_id: str) -> None
+    
+    Clear node evidence by node id
+
+Help on method clear_temporal_evidence in module pysmile:
+
+clear_temporal_evidence(...) method of pysmile.Network instance
+    clear_temporal_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. clear_temporal_evidence(self: pysmile.Network, node_handle: int, slice: int) -> None
+    
+    2. clear_temporal_evidence(self: pysmile.Network, node_id: str, slice: int) -> None
+
+Help on method delete_arc in module pysmile:
+
+delete_arc(...) method of pysmile.Network instance
+    delete_arc(*args, **kwargs)
+    Overloaded function.
+    
+    1. delete_arc(self: pysmile.Network, parent_handle: int, child_handle: int) -> None
+    
+    Delete arc by node handles
+    
+    2. delete_arc(self: pysmile.Network, parent_id: str, child_id: str) -> None
+    
+    Delete arc by node IDs
+
+Help on method delete_cost_arc in module pysmile:
+
+delete_cost_arc(...) method of pysmile.Network instance
+    delete_cost_arc(*args, **kwargs)
+    Overloaded function.
+    
+    1. delete_cost_arc(self: pysmile.Network, parent_handle: int, child_handle: int) -> None
+    
+    2. delete_cost_arc(self: pysmile.Network, parent_id: str, child_id: str) -> None
+
+Help on method delete_node in module pysmile:
+
+delete_node(...) method of pysmile.Network instance
+    delete_node(*args, **kwargs)
+    Overloaded function.
+    
+    1. delete_node(self: pysmile.Network, node_handle: int) -> None
+    
+    Delete node with specified handle
+    
+    2. delete_node(self: pysmile.Network, node_id: str) -> None
+    
+    Delete node with specified ID
+
+Help on method delete_outcome in module pysmile:
+
+delete_outcome(...) method of pysmile.Network instance
+    delete_outcome(*args, **kwargs)
+    Overloaded function.
+    
+    1. delete_outcome(self: pysmile.Network, node_handle: int, outcome_id: str) -> None
+    
+    Delete Outcome by node handle and outcome ID
+    
+    2. delete_outcome(self: pysmile.Network, node_id: str, outcome_id: str) -> None
+    
+    Delete Outcome by node ID and outcome ID
+    
+    3. delete_outcome(self: pysmile.Network, node_handle: int, outcome_index: int) -> None
+    
+    Delete Outcome by node handle and outcome index
+    
+    4. delete_outcome(self: pysmile.Network, node_id: str, outcome_index: int) -> None
+    
+    Delete Outcome by node ID and outcome index
+
+Help on method delete_submodel in module pysmile:
+
+delete_submodel(...) method of pysmile.Network instance
+    delete_submodel(*args, **kwargs)
+    Overloaded function.
+    
+    1. delete_submodel(self: pysmile.Network, handle: int) -> None
+    
+    2. delete_submodel(self: pysmile.Network, id: str) -> None
+
+Help on method delete_temporal_arc in module pysmile:
+
+delete_temporal_arc(...) method of pysmile.Network instance
+    delete_temporal_arc(*args, **kwargs)
+    Overloaded function.
+    
+    1. delete_temporal_arc(self: pysmile.Network, parent_handle: int, child_handle: int, order: int) -> None
+    
+    2. delete_temporal_arc(self: pysmile.Network, parent_id: str, child_id: str, order: int) -> None
+
+Help on method distributed_helper_em in module pysmile:
+
+distributed_helper_em(...) method of pysmile.Network instance
+    distributed_helper_em(self: pysmile.Network) -> List[float]
+
+Help on method get_all_node_ids in module pysmile:
+
+get_all_node_ids(...) method of pysmile.Network instance
+    get_all_node_ids(self: pysmile.Network) -> List[str]
+    
+    Get all node IDs
+
+Help on method get_all_nodes in module pysmile:
+
+get_all_nodes(...) method of pysmile.Network instance
+    get_all_nodes(self: pysmile.Network) -> List[int]
+    
+    Get all nodes Handles
+
+Help on method get_bayesian_algorithm in module pysmile:
+
+get_bayesian_algorithm(...) method of pysmile.Network instance
+    get_bayesian_algorithm(self: pysmile.Network) -> pysmile.BayesianAlgorithmType
+    
+    Get used Bayesian Algorithm
+
+Help on method get_child_ids in module pysmile:
+
+get_child_ids(...) method of pysmile.Network instance
+    get_child_ids(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_child_ids(self: pysmile.Network, node_handle: int) -> List[str]
+    
+    Get children IDs by node handle
+    
+    2. get_child_ids(self: pysmile.Network, node_id: str) -> List[str]
+    
+    Get children IDs by node id
+
+Help on method get_children in module pysmile:
+
+get_children(...) method of pysmile.Network instance
+    get_children(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_children(self: pysmile.Network, node_handle: int) -> List[int]
+    
+    Get children by node handle
+    
+    2. get_children(self: pysmile.Network, node_id: str) -> List[int]
+    
+    Get children by node id
+
+Help on method get_cont_evidence in module pysmile:
+
+get_cont_evidence(...) method of pysmile.Network instance
+    get_cont_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_cont_evidence(self: pysmile.Network, node_handle: int) -> float
+    
+    2. get_cont_evidence(self: pysmile.Network, node_id: str) -> float
+
+Help on method get_controlled_value in module pysmile:
+
+get_controlled_value(...) method of pysmile.Network instance
+    get_controlled_value(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_controlled_value(self: pysmile.Network, node_handle: int) -> int
+    
+    2. get_controlled_value(self: pysmile.Network, node_id: str) -> int
+
+Help on method get_controlled_value_id in module pysmile:
+
+get_controlled_value_id(...) method of pysmile.Network instance
+    get_controlled_value_id(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_controlled_value_id(self: pysmile.Network, node_handle: int) -> str
+    
+    2. get_controlled_value_id(self: pysmile.Network, node_id: str) -> str
+
+Help on method get_cost_child_ids in module pysmile:
+
+get_cost_child_ids(...) method of pysmile.Network instance
+    get_cost_child_ids(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_cost_child_ids(self: pysmile.Network, node_handle: int) -> List[str]
+    
+    2. get_cost_child_ids(self: pysmile.Network, node_id: str) -> List[str]
+
+Help on method get_cost_children in module pysmile:
+
+get_cost_children(...) method of pysmile.Network instance
+    get_cost_children(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_cost_children(self: pysmile.Network, node_handle: int) -> List[int]
+    
+    2. get_cost_children(self: pysmile.Network, node_id: str) -> List[int]
+
+Help on method get_cost_parent_ids in module pysmile:
+
+get_cost_parent_ids(...) method of pysmile.Network instance
+    get_cost_parent_ids(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_cost_parent_ids(self: pysmile.Network, node_handle: int) -> List[str]
+    
+    2. get_cost_parent_ids(self: pysmile.Network, node_id: str) -> List[str]
+
+Help on method get_cost_parents in module pysmile:
+
+get_cost_parents(...) method of pysmile.Network instance
+    get_cost_parents(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_cost_parents(self: pysmile.Network, node_handle: int) -> List[int]
+    
+    2. get_cost_parents(self: pysmile.Network, node_id: str) -> List[int]
+
+Help on method get_de_morgan_parent_type in module pysmile:
+
+get_de_morgan_parent_type(...) method of pysmile.Network instance
+    get_de_morgan_parent_type(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_de_morgan_parent_type(self: pysmile.Network, node_handle: int, parent_index: int) -> pysmile.DeMorganParentType
+    
+    2. get_de_morgan_parent_type(self: pysmile.Network, node_id: str, parent_index: int) -> pysmile.DeMorganParentType
+    
+    3. get_de_morgan_parent_type(self: pysmile.Network, node_handle: int, parent_id: str) -> pysmile.DeMorganParentType
+    
+    4. get_de_morgan_parent_type(self: pysmile.Network, node_id: str, parent_id: str) -> pysmile.DeMorganParentType
+
+Help on method get_de_morgan_parent_weight in module pysmile:
+
+get_de_morgan_parent_weight(...) method of pysmile.Network instance
+    get_de_morgan_parent_weight(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_de_morgan_parent_weight(self: pysmile.Network, node_handle: int, parent_index: int) -> float
+    
+    2. get_de_morgan_parent_weight(self: pysmile.Network, node_id: str, parent_index: int) -> float
+    
+    3. get_de_morgan_parent_weight(self: pysmile.Network, node_handle: int, parent_id: str) -> float
+    
+    4. get_de_morgan_parent_weight(self: pysmile.Network, node_id: str, parent_id: str) -> float
+
+Help on method get_de_morgan_prior_belief in module pysmile:
+
+get_de_morgan_prior_belief(...) method of pysmile.Network instance
+    get_de_morgan_prior_belief(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_de_morgan_prior_belief(self: pysmile.Network, node_handle: int) -> float
+    
+    2. get_de_morgan_prior_belief(self: pysmile.Network, node_id: str) -> float
+
+Help on method get_default_outcome in module pysmile:
+
+get_default_outcome(...) method of pysmile.Network instance
+    get_default_outcome(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_default_outcome(self: pysmile.Network, node_handle: int) -> int
+    
+    2. get_default_outcome(self: pysmile.Network, node_id: str) -> int
+
+Help on method get_default_outcome_id in module pysmile:
+
+get_default_outcome_id(...) method of pysmile.Network instance
+    get_default_outcome_id(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_default_outcome_id(self: pysmile.Network, node_handle: int) -> str
+    
+    2. get_default_outcome_id(self: pysmile.Network, node_id: str) -> str
+
+Help on method get_description in module pysmile:
+
+get_description(...) method of pysmile.Network instance
+    get_description(self: pysmile.Network) -> str
+    
+    Get network description
+
+Help on method get_discretization_sample_count in module pysmile:
+
+get_discretization_sample_count(...) method of pysmile.Network instance
+    get_discretization_sample_count(self: pysmile.Network) -> int
+
+Help on method get_evidence in module pysmile:
+
+get_evidence(...) method of pysmile.Network instance
+    get_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_evidence(self: pysmile.Network, node_handle: int) -> int
+    
+    Get node evidence by node handle
+    
+    2. get_evidence(self: pysmile.Network, node_id: str) -> int
+    
+    Get node evidence by node id
+
+Help on method get_evidence_id in module pysmile:
+
+get_evidence_id(...) method of pysmile.Network instance
+    get_evidence_id(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_evidence_id(self: pysmile.Network, node_handle: int) -> str
+    
+    Get node evidence ID by node handle
+    
+    2. get_evidence_id(self: pysmile.Network, node_id: str) -> str
+    
+    Get node evidence ID by node id
+
+Help on method get_ext_functions in module pysmile:
+
+get_ext_functions(...) method of pysmile.Network instance
+    get_ext_functions(self: pysmile.Network) -> List[str]
+    
+    Get external functions
+
+Help on method get_first_node in module pysmile:
+
+get_first_node(...) method of pysmile.Network instance
+    get_first_node(self: pysmile.Network) -> int
+    
+    Get first node handle
+
+Help on method get_first_node_id in module pysmile:
+
+get_first_node_id(...) method of pysmile.Network instance
+    get_first_node_id(self: pysmile.Network) -> str
+    
+    Get first node ID
+
+Help on method get_first_submodel in module pysmile:
+
+get_first_submodel(...) method of pysmile.Network instance
+    get_first_submodel(self: pysmile.Network) -> int
+
+Help on method get_id in module pysmile:
+
+get_id(...) method of pysmile.Network instance
+    get_id(self: pysmile.Network) -> str
+    
+    Get network ID
+
+Help on method get_influence_diagram_algorithm in module pysmile:
+
+get_influence_diagram_algorithm(...) method of pysmile.Network instance
+    get_influence_diagram_algorithm(self: pysmile.Network) -> pysmile.InfluenceDiagramAlgorithmType
+    
+    Get used Influence Diagram Algorithm
+
+Help on method get_intervals in module pysmile:
+
+get_intervals(...) method of pysmile.Network instance
+    get_intervals(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_intervals(self: pysmile.Network, node_handle: int) -> List[float]
+    
+    2. get_intervals(self: pysmile.Network, node_id: str) -> List[float]
+
+Help on method get_library_build in module pysmile:
+
+get_library_build(...) method of pysmile.Network instance
+    get_library_build(self: pysmile.Network) -> str
+    
+    Get build of SMILE library
+
+Help on method get_main_submodel in module pysmile:
+
+get_main_submodel(...) method of pysmile.Network instance
+    get_main_submodel(self: pysmile.Network) -> int
+
+Help on method get_main_submodel_id in module pysmile:
+
+get_main_submodel_id(...) method of pysmile.Network instance
+    get_main_submodel_id(self: pysmile.Network) -> str
+
+Help on method get_mau_expressions in module pysmile:
+
+get_mau_expressions(...) method of pysmile.Network instance
+    get_mau_expressions(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_mau_expressions(self: pysmile.Network, node_handle: int) -> List[str]
+    
+    2. get_mau_expressions(self: pysmile.Network, node_id: str) -> List[str]
+
+Help on method get_max_node_temporal_order in module pysmile:
+
+get_max_node_temporal_order(...) method of pysmile.Network instance
+    get_max_node_temporal_order(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_max_node_temporal_order(self: pysmile.Network, node_handle: int) -> int
+    
+    2. get_max_node_temporal_order(self: pysmile.Network, node_id: str) -> int
+
+Help on method get_max_temporal_order in module pysmile:
+
+get_max_temporal_order(...) method of pysmile.Network instance
+    get_max_temporal_order(self: pysmile.Network) -> int
+
+Help on method get_name in module pysmile:
+
+get_name(...) method of pysmile.Network instance
+    get_name(self: pysmile.Network) -> str
+    
+    Get network name
+
+Help on method get_next_node in module pysmile:
+
+get_next_node(...) method of pysmile.Network instance
+    get_next_node(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_next_node(self: pysmile.Network, node_handle: int) -> int
+    
+    Get next node handle by node handle
+    
+    2. get_next_node(self: pysmile.Network, node_id: str) -> int
+    
+    Get next node handle by node id
+
+Help on method get_next_node_id in module pysmile:
+
+get_next_node_id(...) method of pysmile.Network instance
+    get_next_node_id(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_next_node_id(self: pysmile.Network, node_handle: int) -> str
+    
+    Get next node ID by node handle
+    
+    2. get_next_node_id(self: pysmile.Network, node_id: str) -> str
+    
+    Get next node ID by node id
+
+Help on method get_next_submodel in module pysmile:
+
+get_next_submodel(...) method of pysmile.Network instance
+    get_next_submodel(self: pysmile.Network, handle: int) -> int
+
+Help on method get_node in module pysmile:
+
+get_node(...) method of pysmile.Network instance
+    get_node(self: pysmile.Network, node_id: str) -> int
+    
+    Get node handle by ID
+
+Help on method get_node_bg_color in module pysmile:
+
+get_node_bg_color(...) method of pysmile.Network instance
+    get_node_bg_color(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_bg_color(self: pysmile.Network, node_handle: int) -> int
+    
+    2. get_node_bg_color(self: pysmile.Network, node_id: str) -> int
+
+Help on method get_node_border_color in module pysmile:
+
+get_node_border_color(...) method of pysmile.Network instance
+    get_node_border_color(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_border_color(self: pysmile.Network, node_handle: int) -> int
+    
+    2. get_node_border_color(self: pysmile.Network, node_id: str) -> int
+
+Help on method get_node_border_width in module pysmile:
+
+get_node_border_width(...) method of pysmile.Network instance
+    get_node_border_width(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_border_width(self: pysmile.Network, node_handle: int) -> int
+    
+    2. get_node_border_width(self: pysmile.Network, node_id: str) -> int
+
+Help on method get_node_chart_size in module pysmile:
+
+get_node_chart_size(...) method of pysmile.Network instance
+    get_node_chart_size(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_chart_size(self: pysmile.Network, node_handle: int) -> List[int]
+    
+    Get Node Chart Size
+    
+    2. get_node_chart_size(self: pysmile.Network, node_id: str) -> List[int]
+    
+    Get Node Chart Size
+
+Help on method get_node_cost in module pysmile:
+
+get_node_cost(...) method of pysmile.Network instance
+    get_node_cost(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_cost(self: pysmile.Network, node_handle: int) -> List[float]
+    
+    2. get_node_cost(self: pysmile.Network, node_id: str) -> List[float]
+
+Help on method get_node_count in module pysmile:
+
+get_node_count(...) method of pysmile.Network instance
+    get_node_count(self: pysmile.Network) -> int
+    
+    Get number of nodes
+
+Help on method get_node_definition in module pysmile:
+
+get_node_definition(...) method of pysmile.Network instance
+    get_node_definition(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_definition(self: pysmile.Network, node_handle: int) -> List[float]
+    
+    Get Node Definition by node handle
+    
+    2. get_node_definition(self: pysmile.Network, node_id: str) -> List[float]
+    
+    Get Node Definition by node ID
+
+Help on method get_node_description in module pysmile:
+
+get_node_description(...) method of pysmile.Network instance
+    get_node_description(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_description(self: pysmile.Network, node_handle: int) -> str
+    
+    Get Node Description by node handle
+    
+    2. get_node_description(self: pysmile.Network, node_id: str) -> str
+    
+    Get Node Description by node id
+
+Help on method get_node_diag_type in module pysmile:
+
+get_node_diag_type(...) method of pysmile.Network instance
+    get_node_diag_type(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_diag_type(self: pysmile.Network, node_handle: int) -> pysmile.NodeDiagType
+    
+    2. get_node_diag_type(self: pysmile.Network, node_id: str) -> pysmile.NodeDiagType
+
+Help on method get_node_documentation in module pysmile:
+
+get_node_documentation(...) method of pysmile.Network instance
+    get_node_documentation(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_documentation(self: pysmile.Network, node_handle: int) -> List[pysmile.DocItemInfo]
+    
+    2. get_node_documentation(self: pysmile.Network, node_id: str) -> List[pysmile.DocItemInfo]
+
+Help on method get_node_equation in module pysmile:
+
+get_node_equation(...) method of pysmile.Network instance
+    get_node_equation(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_equation(self: pysmile.Network, node_handle: int) -> str
+    
+    2. get_node_equation(self: pysmile.Network, node_id: str) -> str
+
+Help on method get_node_equation_bounds in module pysmile:
+
+get_node_equation_bounds(...) method of pysmile.Network instance
+    get_node_equation_bounds(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_equation_bounds(self: pysmile.Network, node_handle: int) -> List[float]
+    
+    2. get_node_equation_bounds(self: pysmile.Network, node_id: str) -> List[float]
+
+Help on method get_node_equation_constant in module pysmile:
+
+get_node_equation_constant(...) method of pysmile.Network instance
+    get_node_equation_constant(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_equation_constant(self: pysmile.Network, node_handle: int) -> float
+    
+    2. get_node_equation_constant(self: pysmile.Network, node_id: str) -> float
+
+Help on method get_node_equation_discretization in module pysmile:
+
+get_node_equation_discretization(...) method of pysmile.Network instance
+    get_node_equation_discretization(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_equation_discretization(self: pysmile.Network, node_handle: int) -> List[pysmile.DiscretizationInterval]
+    
+    2. get_node_equation_discretization(self: pysmile.Network, node_id: str) -> List[pysmile.DiscretizationInterval]
+
+Help on method get_node_id in module pysmile:
+
+get_node_id(...) method of pysmile.Network instance
+    get_node_id(self: pysmile.Network, node_handle: int) -> str
+    
+    Get node ID by handle
+
+Help on method get_node_mean in module pysmile:
+
+get_node_mean(...) method of pysmile.Network instance
+    get_node_mean(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_mean(self: pysmile.Network, node_handle: int) -> float
+    
+    2. get_node_mean(self: pysmile.Network, node_id: str) -> float
+
+Help on method get_node_name in module pysmile:
+
+get_node_name(...) method of pysmile.Network instance
+    get_node_name(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_name(self: pysmile.Network, node_handle: int) -> str
+    
+    Get node name by node handle
+    
+    2. get_node_name(self: pysmile.Network, node_id: str) -> str
+    
+    Get node name by node id
+
+Help on method get_node_position in module pysmile:
+
+get_node_position(...) method of pysmile.Network instance
+    get_node_position(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_position(self: pysmile.Network, node_handle: int) -> List[int]
+    
+    2. get_node_position(self: pysmile.Network, node_id: str) -> List[int]
+
+Help on method get_node_question in module pysmile:
+
+get_node_question(...) method of pysmile.Network instance
+    get_node_question(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_question(self: pysmile.Network, node_handle: int) -> str
+    
+    2. get_node_question(self: pysmile.Network, node_id: str) -> str
+
+Help on method get_node_sample_stats in module pysmile:
+
+get_node_sample_stats(...) method of pysmile.Network instance
+    get_node_sample_stats(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_sample_stats(self: pysmile.Network, node_handle: int) -> List[float]
+    
+    2. get_node_sample_stats(self: pysmile.Network, node_id: str) -> List[float]
+
+Help on method get_node_std_dev in module pysmile:
+
+get_node_std_dev(...) method of pysmile.Network instance
+    get_node_std_dev(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_std_dev(self: pysmile.Network, node_handle: int) -> float
+    
+    2. get_node_std_dev(self: pysmile.Network, node_id: str) -> float
+
+Help on method get_node_temporal_definition in module pysmile:
+
+get_node_temporal_definition(...) method of pysmile.Network instance
+    get_node_temporal_definition(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_temporal_definition(self: pysmile.Network, node_handle: int, order: int) -> List[float]
+    
+    2. get_node_temporal_definition(self: pysmile.Network, node_id: str, order: int) -> List[float]
+
+Help on method get_node_temporal_type in module pysmile:
+
+get_node_temporal_type(...) method of pysmile.Network instance
+    get_node_temporal_type(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_temporal_type(self: pysmile.Network, node_handle: int) -> pysmile.NodeTemporalType
+    
+    2. get_node_temporal_type(self: pysmile.Network, node_id: str) -> pysmile.NodeTemporalType
+
+Help on method get_node_text_color in module pysmile:
+
+get_node_text_color(...) method of pysmile.Network instance
+    get_node_text_color(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_text_color(self: pysmile.Network, node_handle: int) -> int
+    
+    2. get_node_text_color(self: pysmile.Network, node_id: str) -> int
+
+Help on method get_node_type in module pysmile:
+
+get_node_type(...) method of pysmile.Network instance
+    get_node_type(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_type(self: pysmile.Network, node_handle: int) -> int
+    
+    Get node type by node handle
+    
+    2. get_node_type(self: pysmile.Network, node_id: str) -> int
+    
+    Get node type by node id
+
+Help on method get_node_user_properties in module pysmile:
+
+get_node_user_properties(...) method of pysmile.Network instance
+    get_node_user_properties(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_user_properties(self: pysmile.Network, node_handle: int) -> List[pysmile.UserProperty]
+    
+    2. get_node_user_properties(self: pysmile.Network, node_id: str) -> List[pysmile.UserProperty]
+
+Help on method get_node_value in module pysmile:
+
+get_node_value(...) method of pysmile.Network instance
+    get_node_value(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_node_value(self: pysmile.Network, node_handle: int) -> List[float]
+    
+    Get node value by node handle
+    
+    2. get_node_value(self: pysmile.Network, node_id: str) -> List[float]
+    
+    Get node value by node id
+
+Help on method get_noisy_decomposition_limit in module pysmile:
+
+get_noisy_decomposition_limit(...) method of pysmile.Network instance
+    get_noisy_decomposition_limit(self: pysmile.Network) -> int
+    
+    Get Noisy Decomposition Limit
+
+Help on method get_noisy_expanded_definition in module pysmile:
+
+get_noisy_expanded_definition(...) method of pysmile.Network instance
+    get_noisy_expanded_definition(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_noisy_expanded_definition(self: pysmile.Network, node_handle: int) -> List[float]
+    
+    2. get_noisy_expanded_definition(self: pysmile.Network, node_id: str) -> List[float]
+
+Help on method get_noisy_parent_strengths in module pysmile:
+
+get_noisy_parent_strengths(...) method of pysmile.Network instance
+    get_noisy_parent_strengths(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_noisy_parent_strengths(self: pysmile.Network, node_handle: int, parent_index: int) -> List[int]
+    
+    2. get_noisy_parent_strengths(self: pysmile.Network, node_id: str, parent_index: int) -> List[int]
+    
+    3. get_noisy_parent_strengths(self: pysmile.Network, node_handle: int, parent_id: str) -> List[int]
+    
+    4. get_noisy_parent_strengths(self: pysmile.Network, node_id: str, parent_id: str) -> List[int]
+
+Help on method get_noisy_temporal_parent_strengths in module pysmile:
+
+get_noisy_temporal_parent_strengths(...) method of pysmile.Network instance
+    get_noisy_temporal_parent_strengths(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_noisy_temporal_parent_strengths(self: pysmile.Network, node_handle: int, order: int) -> List[List[int]]
+    
+    2. get_noisy_temporal_parent_strengths(self: pysmile.Network, node_id: str, order: int) -> List[List[int]]
+
+Help on method get_outcome_count in module pysmile:
+
+get_outcome_count(...) method of pysmile.Network instance
+    get_outcome_count(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_outcome_count(self: pysmile.Network, node_handle: int) -> int
+    
+    Get node outcome count by node handle
+    
+    2. get_outcome_count(self: pysmile.Network, node_id: str) -> int
+    
+    Get node outcome count by node id
+
+Help on method get_outcome_description in module pysmile:
+
+get_outcome_description(...) method of pysmile.Network instance
+    get_outcome_description(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_outcome_description(self: pysmile.Network, node_handle: int, outcome_index: int) -> str
+    
+    2. get_outcome_description(self: pysmile.Network, node_id: str, outcome_index: int) -> str
+    
+    3. get_outcome_description(self: pysmile.Network, node_handle: int, outcome_id: str) -> str
+    
+    4. get_outcome_description(self: pysmile.Network, node_id: str, outcome_id: str) -> str
+
+Help on method get_outcome_documentation in module pysmile:
+
+get_outcome_documentation(...) method of pysmile.Network instance
+    get_outcome_documentation(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_outcome_documentation(self: pysmile.Network, node_handle: int, outcome_index: int) -> List[pysmile.DocItemInfo]
+    
+    2. get_outcome_documentation(self: pysmile.Network, node_id: str, outcome_index: int) -> List[pysmile.DocItemInfo]
+    
+    3. get_outcome_documentation(self: pysmile.Network, node_id: str, outcome_id: str) -> List[pysmile.DocItemInfo]
+    
+    4. get_outcome_documentation(self: pysmile.Network, node_handle: int, outcome_id: str) -> List[pysmile.DocItemInfo]
+
+Help on method get_outcome_fix in module pysmile:
+
+get_outcome_fix(...) method of pysmile.Network instance
+    get_outcome_fix(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_outcome_fix(self: pysmile.Network, node_handle: int, outcome_index: int) -> str
+    
+    2. get_outcome_fix(self: pysmile.Network, node_id: str, outcome_index: int) -> str
+    
+    3. get_outcome_fix(self: pysmile.Network, node_handle: int, outcome_id: str) -> str
+    
+    4. get_outcome_fix(self: pysmile.Network, node_id: str, outcome_id: str) -> str
+
+Help on method get_outcome_id in module pysmile:
+
+get_outcome_id(...) method of pysmile.Network instance
+    get_outcome_id(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_outcome_id(self: pysmile.Network, node_handle: int, outcome_index: int) -> str
+    
+    Get Outcome ID by node handle
+    
+    2. get_outcome_id(self: pysmile.Network, node_id: str, outcome_index: int) -> str
+    
+    Get Outcome ID by node id
+
+Help on method get_outcome_ids in module pysmile:
+
+get_outcome_ids(...) method of pysmile.Network instance
+    get_outcome_ids(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_outcome_ids(self: pysmile.Network, arg0: int) -> List[str]
+    
+    Get node outcome IDs by node handle
+    
+    2. get_outcome_ids(self: pysmile.Network, arg0: str) -> List[str]
+    
+    Get node outcome IDs by node id
+
+Help on method get_outcome_label in module pysmile:
+
+get_outcome_label(...) method of pysmile.Network instance
+    get_outcome_label(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_outcome_label(self: pysmile.Network, node_handle: int, outcome_index: int) -> str
+    
+    2. get_outcome_label(self: pysmile.Network, node_id: str, outcome_index: int) -> str
+    
+    3. get_outcome_label(self: pysmile.Network, node_handle: int, outcome_id: str) -> str
+    
+    4. get_outcome_label(self: pysmile.Network, node_id: str, outcome_id: str) -> str
+
+Help on method get_parent_ids in module pysmile:
+
+get_parent_ids(...) method of pysmile.Network instance
+    get_parent_ids(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_parent_ids(self: pysmile.Network, node_handle: int) -> List[str]
+    
+    Get parents IDs by node handle
+    
+    2. get_parent_ids(self: pysmile.Network, node_id: str) -> List[str]
+    
+    Get parents IDs by node id
+
+Help on method get_parents in module pysmile:
+
+get_parents(...) method of pysmile.Network instance
+    get_parents(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_parents(self: pysmile.Network, node_handle: int) -> List[int]
+    
+    Get parents by node handle
+    
+    2. get_parents(self: pysmile.Network, node_id: str) -> List[int]
+    
+    Get parents by node id
+
+Help on method get_point_values in module pysmile:
+
+get_point_values(...) method of pysmile.Network instance
+    get_point_values(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_point_values(self: pysmile.Network, node_handle: int) -> List[float]
+    
+    2. get_point_values(self: pysmile.Network, node_id: str) -> List[float]
+
+Help on method get_rand_seed in module pysmile:
+
+get_rand_seed(...) method of pysmile.Network instance
+    get_rand_seed(self: pysmile.Network) -> int
+
+Help on method get_sample_count in module pysmile:
+
+get_sample_count(...) method of pysmile.Network instance
+    get_sample_count(self: pysmile.Network) -> int
+    
+    Get number of samples
+
+Help on method get_slice_count in module pysmile:
+
+get_slice_count(...) method of pysmile.Network instance
+    get_slice_count(self: pysmile.Network) -> int
+
+Help on method get_submodel in module pysmile:
+
+get_submodel(...) method of pysmile.Network instance
+    get_submodel(self: pysmile.Network, id: str) -> int
+
+Help on method get_submodel_count in module pysmile:
+
+get_submodel_count(...) method of pysmile.Network instance
+    get_submodel_count(self: pysmile.Network) -> int
+
+Help on method get_submodel_description in module pysmile:
+
+get_submodel_description(...) method of pysmile.Network instance
+    get_submodel_description(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_submodel_description(self: pysmile.Network, handle: int) -> str
+    
+    2. get_submodel_description(self: pysmile.Network, id: str) -> str
+
+Help on method get_submodel_id in module pysmile:
+
+get_submodel_id(...) method of pysmile.Network instance
+    get_submodel_id(self: pysmile.Network, handle: int) -> str
+
+Help on method get_submodel_name in module pysmile:
+
+get_submodel_name(...) method of pysmile.Network instance
+    get_submodel_name(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_submodel_name(self: pysmile.Network, handle: int) -> str
+    
+    2. get_submodel_name(self: pysmile.Network, id: str) -> str
+
+Help on method get_submodel_of_node in module pysmile:
+
+get_submodel_of_node(...) method of pysmile.Network instance
+    get_submodel_of_node(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_submodel_of_node(self: pysmile.Network, node_handle: int) -> int
+    
+    2. get_submodel_of_node(self: pysmile.Network, node_id: str) -> int
+
+Help on method get_submodel_of_submodel in module pysmile:
+
+get_submodel_of_submodel(...) method of pysmile.Network instance
+    get_submodel_of_submodel(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_submodel_of_submodel(self: pysmile.Network, submodel_handle: int) -> int
+    
+    2. get_submodel_of_submodel(self: pysmile.Network, submodel_id: str) -> int
+
+Help on method get_submodel_position in module pysmile:
+
+get_submodel_position(...) method of pysmile.Network instance
+    get_submodel_position(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_submodel_position(self: pysmile.Network, submodel_handle: int) -> List[int]
+    
+    2. get_submodel_position(self: pysmile.Network, submodel_id: str) -> List[int]
+
+Help on method get_temporal_children in module pysmile:
+
+get_temporal_children(...) method of pysmile.Network instance
+    get_temporal_children(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_temporal_children(self: pysmile.Network, node_handle: int) -> List[pysmile.TemporalInfo]
+    
+    2. get_temporal_children(self: pysmile.Network, node_id: str) -> List[pysmile.TemporalInfo]
+
+Help on method get_temporal_evidence in module pysmile:
+
+get_temporal_evidence(...) method of pysmile.Network instance
+    get_temporal_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_temporal_evidence(self: pysmile.Network, node_handle: int, slice: int) -> int
+    
+    2. get_temporal_evidence(self: pysmile.Network, node_id: str, slice: int) -> int
+
+Help on method get_temporal_evidence_id in module pysmile:
+
+get_temporal_evidence_id(...) method of pysmile.Network instance
+    get_temporal_evidence_id(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_temporal_evidence_id(self: pysmile.Network, node_handle: int, slice: int) -> str
+    
+    2. get_temporal_evidence_id(self: pysmile.Network, node_id: str, slice: int) -> str
+
+Help on method get_temporal_orders in module pysmile:
+
+get_temporal_orders(...) method of pysmile.Network instance
+    get_temporal_orders(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_temporal_orders(self: pysmile.Network, node_handle: int) -> List[int]
+    
+    2. get_temporal_orders(self: pysmile.Network, node_id: str) -> List[int]
+
+Help on method get_temporal_parents in module pysmile:
+
+get_temporal_parents(...) method of pysmile.Network instance
+    get_temporal_parents(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_temporal_parents(self: pysmile.Network, node_handle: int, order: int) -> List[pysmile.TemporalInfo]
+    
+    2. get_temporal_parents(self: pysmile.Network, node_handle: str, order: int) -> List[pysmile.TemporalInfo]
+
+Help on method get_temporal_virtual_evidence in module pysmile:
+
+get_temporal_virtual_evidence(...) method of pysmile.Network instance
+    get_temporal_virtual_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_temporal_virtual_evidence(self: pysmile.Network, node_handle: int, slice: int) -> List[float]
+    
+    2. get_temporal_virtual_evidence(self: pysmile.Network, node_id: str, slice: int) -> List[float]
+
+Help on method get_unrolled_parents in module pysmile:
+
+get_unrolled_parents(...) method of pysmile.Network instance
+    get_unrolled_parents(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_unrolled_parents(self: pysmile.Network, node_handle: int, order: int) -> List[pysmile.TemporalInfo]
+    
+    2. get_unrolled_parents(self: pysmile.Network, node_id: str, order: int) -> List[pysmile.TemporalInfo]
+    
+    3. get_unrolled_parents(self: pysmile.Network, node_handle: int) -> List[pysmile.TemporalInfo]
+    
+    4. get_unrolled_parents(self: pysmile.Network, node_id: str) -> List[pysmile.TemporalInfo]
+
+Help on method get_user_properties in module pysmile:
+
+get_user_properties(...) method of pysmile.Network instance
+    get_user_properties(self: pysmile.Network) -> List[pysmile.UserProperty]
+
+Help on method get_value_indexing_parent_ids in module pysmile:
+
+get_value_indexing_parent_ids(...) method of pysmile.Network instance
+    get_value_indexing_parent_ids(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_value_indexing_parent_ids(self: pysmile.Network, node_handle: int) -> List[str]
+    
+    2. get_value_indexing_parent_ids(self: pysmile.Network, node_id: str) -> List[str]
+
+Help on method get_value_indexing_parents in module pysmile:
+
+get_value_indexing_parents(...) method of pysmile.Network instance
+    get_value_indexing_parents(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_value_indexing_parents(self: pysmile.Network, node_handle: int) -> List[int]
+    
+    2. get_value_indexing_parents(self: pysmile.Network, node_id: str) -> List[int]
+
+Help on method get_virtual_evidence in module pysmile:
+
+get_virtual_evidence(...) method of pysmile.Network instance
+    get_virtual_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. get_virtual_evidence(self: pysmile.Network, node_handle: int) -> List[float]
+    
+    2. get_virtual_evidence(self: pysmile.Network, node_id: str) -> List[float]
+
+Help on method has_intervals in module pysmile:
+
+has_intervals(...) method of pysmile.Network instance
+    has_intervals(*args, **kwargs)
+    Overloaded function.
+    
+    1. has_intervals(self: pysmile.Network, node_handle: int) -> bool
+    
+    2. has_intervals(self: pysmile.Network, node_id: str) -> bool
+
+Help on method has_outcome_ids in module pysmile:
+
+has_outcome_ids(...) method of pysmile.Network instance
+    has_outcome_ids(*args, **kwargs)
+    Overloaded function.
+    
+    1. has_outcome_ids(self: pysmile.Network, node_handle: int) -> bool
+    
+    2. has_outcome_ids(self: pysmile.Network, node_id: str) -> bool
+
+Help on method has_point_values in module pysmile:
+
+has_point_values(...) method of pysmile.Network instance
+    has_point_values(*args, **kwargs)
+    Overloaded function.
+    
+    1. has_point_values(self: pysmile.Network, node_handle: int) -> bool
+    
+    2. has_point_values(self: pysmile.Network, node_id: str) -> bool
+
+Help on method has_temporal_evidence in module pysmile:
+
+has_temporal_evidence(...) method of pysmile.Network instance
+    has_temporal_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. has_temporal_evidence(self: pysmile.Network, node_handle: int) -> bool
+    
+    2. has_temporal_evidence(self: pysmile.Network, node_id: str) -> bool
+
+Help on method insert_outcome in module pysmile:
+
+insert_outcome(...) method of pysmile.Network instance
+    insert_outcome(*args, **kwargs)
+    Overloaded function.
+    
+    1. insert_outcome(self: pysmile.Network, node_handle: int, outcome_index: int, outcome_id: str) -> None
+    
+    Insert Outcome by node handle
+    
+    2. insert_outcome(self: pysmile.Network, node_id: str, outcome_index: int, outcome_id: str) -> None
+    
+    Insert Outcome by node id
+
+Help on method is_controlled in module pysmile:
+
+is_controlled(...) method of pysmile.Network instance
+    is_controlled(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_controlled(self: pysmile.Network, node_handle: int) -> bool
+    
+    2. is_controlled(self: pysmile.Network, node_id: str) -> bool
+
+Help on method is_evidence in module pysmile:
+
+is_evidence(...) method of pysmile.Network instance
+    is_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_evidence(self: pysmile.Network, node_handle: int) -> bool
+    
+    Check node evidence status by node handle
+    
+    2. is_evidence(self: pysmile.Network, node_id: str) -> bool
+    
+    Check node evidence status by node id
+
+Help on method is_fault_outcome in module pysmile:
+
+is_fault_outcome(...) method of pysmile.Network instance
+    is_fault_outcome(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_fault_outcome(self: pysmile.Network, node_handle: int, outcome_index: int) -> bool
+    
+    2. is_fault_outcome(self: pysmile.Network, node_id: str, outcome_index: int) -> bool
+    
+    3. is_fault_outcome(self: pysmile.Network, node_handle: int, outcome_id: str) -> bool
+    
+    4. is_fault_outcome(self: pysmile.Network, node_id: str, outcome_id: str) -> bool
+
+Help on method is_mandatory in module pysmile:
+
+is_mandatory(...) method of pysmile.Network instance
+    is_mandatory(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_mandatory(self: pysmile.Network, node_handle: int) -> bool
+    
+    2. is_mandatory(self: pysmile.Network, node_id: str) -> bool
+
+Help on method is_node_chart_enabled in module pysmile:
+
+is_node_chart_enabled(...) method of pysmile.Network instance
+    is_node_chart_enabled(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_node_chart_enabled(self: pysmile.Network, node_handle: int) -> bool
+    
+    Is Node Chart Enabled
+    
+    2. is_node_chart_enabled(self: pysmile.Network, node_id: str) -> bool
+    
+    Is Node Chart Enabled
+
+Help on method is_node_equation_constant in module pysmile:
+
+is_node_equation_constant(...) method of pysmile.Network instance
+    is_node_equation_constant(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_node_equation_constant(self: pysmile.Network, node_handle: int) -> bool
+    
+    2. is_node_equation_constant(self: pysmile.Network, node_id: str) -> bool
+
+Help on method is_node_equation_deterministic in module pysmile:
+
+is_node_equation_deterministic(...) method of pysmile.Network instance
+    is_node_equation_deterministic(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_node_equation_deterministic(self: pysmile.Network, node_handle: int) -> bool
+    
+    2. is_node_equation_deterministic(self: pysmile.Network, node_id: str) -> bool
+
+Help on method is_noisy_decomposition_enabled in module pysmile:
+
+is_noisy_decomposition_enabled(...) method of pysmile.Network instance
+    is_noisy_decomposition_enabled(self: pysmile.Network) -> bool
+    
+    Is Noisy Decomposition Enabled
+
+Help on method is_noisy_expanded in module pysmile:
+
+is_noisy_expanded(...) method of pysmile.Network instance
+    is_noisy_expanded(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_noisy_expanded(self: pysmile.Network, node_handle: int) -> bool
+    
+    2. is_noisy_expanded(self: pysmile.Network, node_id: str) -> bool
+
+Help on method is_noisy_synchronized in module pysmile:
+
+is_noisy_synchronized(...) method of pysmile.Network instance
+    is_noisy_synchronized(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_noisy_synchronized(self: pysmile.Network, node_handle: int) -> bool
+    
+    2. is_noisy_synchronized(self: pysmile.Network, node_id: str) -> bool
+
+Help on method is_outlier_rejection_enabled in module pysmile:
+
+is_outlier_rejection_enabled(...) method of pysmile.Network instance
+    is_outlier_rejection_enabled(self: pysmile.Network) -> bool
+
+Help on method is_propagated_evidence in module pysmile:
+
+is_propagated_evidence(...) method of pysmile.Network instance
+    is_propagated_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_propagated_evidence(self: pysmile.Network, node_handle: int) -> bool
+    
+    2. is_propagated_evidence(self: pysmile.Network, node_id: str) -> bool
+
+Help on method is_ranked in module pysmile:
+
+is_ranked(...) method of pysmile.Network instance
+    is_ranked(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_ranked(self: pysmile.Network, node_handle: int) -> bool
+    
+    2. is_ranked(self: pysmile.Network, node_id: str) -> bool
+
+Help on method is_real_evidence in module pysmile:
+
+is_real_evidence(...) method of pysmile.Network instance
+    is_real_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_real_evidence(self: pysmile.Network, node_handle: int) -> bool
+    
+    2. is_real_evidence(self: pysmile.Network, node_id: str) -> bool
+
+Help on method is_relevance_enabled in module pysmile:
+
+is_relevance_enabled(...) method of pysmile.Network instance
+    is_relevance_enabled(self: pysmile.Network) -> bool
+    
+    Check relevance
+
+Help on method is_target in module pysmile:
+
+is_target(...) method of pysmile.Network instance
+    is_target(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_target(self: pysmile.Network, node_handle: int) -> bool
+    
+    Check if node is target by node handle
+    
+    2. is_target(self: pysmile.Network, node_id: str) -> bool
+    
+    Check if node is target by node id
+
+Help on method is_temporal_evidence in module pysmile:
+
+is_temporal_evidence(...) method of pysmile.Network instance
+    is_temporal_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_temporal_evidence(self: pysmile.Network, node_handle: int, slice: int) -> bool
+    
+    2. is_temporal_evidence(self: pysmile.Network, node_id: str, slice: int) -> bool
+
+Help on method is_temporal_virtual_evidence in module pysmile:
+
+is_temporal_virtual_evidence(...) method of pysmile.Network instance
+    is_temporal_virtual_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_temporal_virtual_evidence(self: pysmile.Network, node_handle: int, slice: int) -> bool
+    
+    2. is_temporal_virtual_evidence(self: pysmile.Network, node_id: str, slice: int) -> bool
+
+Help on method is_value_discretized in module pysmile:
+
+is_value_discretized(...) method of pysmile.Network instance
+    is_value_discretized(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_value_discretized(self: pysmile.Network, node_handle: int) -> bool
+    
+    2. is_value_discretized(self: pysmile.Network, node_id: str) -> bool
+
+Help on method is_value_valid in module pysmile:
+
+is_value_valid(...) method of pysmile.Network instance
+    is_value_valid(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_value_valid(self: pysmile.Network, node_handle: int) -> bool
+    
+    2. is_value_valid(self: pysmile.Network, node_id: str) -> bool
+
+Help on method is_virtual_evidence in module pysmile:
+
+is_virtual_evidence(...) method of pysmile.Network instance
+    is_virtual_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. is_virtual_evidence(self: pysmile.Network, node_handle: int) -> bool
+    
+    2. is_virtual_evidence(self: pysmile.Network, node_id: str) -> bool
+
+Help on method is_zero_avoidance_enabled in module pysmile:
+
+is_zero_avoidance_enabled(...) method of pysmile.Network instance
+    is_zero_avoidance_enabled(self: pysmile.Network) -> bool
+
+Help on method prob_evidence in module pysmile:
+
+prob_evidence(...) method of pysmile.Network instance
+    prob_evidence(self: pysmile.Network) -> float
+    
+    Prob evidence
+
+Help on method read_file in module pysmile:
+
+read_file(...) method of pysmile.Network instance
+    read_file(self: pysmile.Network, xdsl_file: str) -> None
+    
+    Read network from xdsl file
+
+Help on method read_string in module pysmile:
+
+read_string(...) method of pysmile.Network instance
+    read_string(self: pysmile.Network, xdsl_string: str) -> None
+    
+    Read network from xdsl-formatted string
+
+Help on method remove_intervals in module pysmile:
+
+remove_intervals(...) method of pysmile.Network instance
+    remove_intervals(*args, **kwargs)
+    Overloaded function.
+    
+    1. remove_intervals(self: pysmile.Network, node_handle: int) -> None
+    
+    2. remove_intervals(self: pysmile.Network, node_id: str) -> None
+
+Help on method remove_point_values in module pysmile:
+
+remove_point_values(...) method of pysmile.Network instance
+    remove_point_values(*args, **kwargs)
+    Overloaded function.
+    
+    1. remove_point_values(self: pysmile.Network, node_handle: int) -> None
+    
+    2. remove_point_values(self: pysmile.Network, node_id: str) -> None
+
+Help on method set_bayesian_algorithm in module pysmile:
+
+set_bayesian_algorithm(...) method of pysmile.Network instance
+    set_bayesian_algorithm(self: pysmile.Network, bayesian_algorithm: pysmile.BayesianAlgorithmType) -> None
+    
+    Set Bayesian Algorithm
+
+Help on method set_cont_evidence in module pysmile:
+
+set_cont_evidence(...) method of pysmile.Network instance
+    set_cont_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_cont_evidence(self: pysmile.Network, node_handle: int, evidence: float) -> None
+    
+    2. set_cont_evidence(self: pysmile.Network, node_id: str, evidence: float) -> None
+
+Help on method set_controlled_value in module pysmile:
+
+set_controlled_value(...) method of pysmile.Network instance
+    set_controlled_value(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_controlled_value(self: pysmile.Network, node_handle: int, outcome_index: int) -> None
+    
+    2. set_controlled_value(self: pysmile.Network, node_id: str, outcome_index: int) -> None
+    
+    3. set_controlled_value(self: pysmile.Network, node_handle: int, outcome_id: str) -> None
+    
+    4. set_controlled_value(self: pysmile.Network, node_id: str, outcome_id: str) -> None
+
+Help on method set_de_morgan_parent_type in module pysmile:
+
+set_de_morgan_parent_type(...) method of pysmile.Network instance
+    set_de_morgan_parent_type(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_de_morgan_parent_type(self: pysmile.Network, node_handle: int, parent_index: int, parent_type: pysmile.DeMorganParentType) -> None
+    
+    2. set_de_morgan_parent_type(self: pysmile.Network, node_id: str, parent_index: int, parent_type: pysmile.DeMorganParentType) -> None
+    
+    3. set_de_morgan_parent_type(self: pysmile.Network, node_handle: int, parent_id: str, parent_type: pysmile.DeMorganParentType) -> None
+    
+    4. set_de_morgan_parent_type(self: pysmile.Network, node_id: str, parent_id: str, parent_type: pysmile.DeMorganParentType) -> None
+
+Help on method set_de_morgan_parent_weight in module pysmile:
+
+set_de_morgan_parent_weight(...) method of pysmile.Network instance
+    set_de_morgan_parent_weight(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_de_morgan_parent_weight(self: pysmile.Network, node_handle: int, parent_index: int, parent_weight: float) -> None
+    
+    2. set_de_morgan_parent_weight(self: pysmile.Network, node_id: str, parent_index: int, parent_weight: float) -> None
+    
+    3. set_de_morgan_parent_weight(self: pysmile.Network, node_handle: int, parent_id: str, parent_weight: float) -> None
+    
+    4. set_de_morgan_parent_weight(self: pysmile.Network, node_id: str, parent_id: str, parent_weight: float) -> None
+
+Help on method set_de_morgan_prior_belief in module pysmile:
+
+set_de_morgan_prior_belief(...) method of pysmile.Network instance
+    set_de_morgan_prior_belief(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_de_morgan_prior_belief(self: pysmile.Network, node_handle: int, belief: float) -> None
+    
+    2. set_de_morgan_prior_belief(self: pysmile.Network, node_id: str, belief: float) -> None
+
+Help on method set_default_outcome in module pysmile:
+
+set_default_outcome(...) method of pysmile.Network instance
+    set_default_outcome(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_default_outcome(self: pysmile.Network, node_handle: int, def_outcome: int) -> None
+    
+    2. set_default_outcome(self: pysmile.Network, node_id: str, def_outcome: int) -> None
+    
+    3. set_default_outcome(self: pysmile.Network, node_handle: int, def_outcome_id: str) -> None
+    
+    4. set_default_outcome(self: pysmile.Network, node_id: str, def_outcome_id: str) -> None
+
+Help on method set_description in module pysmile:
+
+set_description(...) method of pysmile.Network instance
+    set_description(self: pysmile.Network, new_description: str) -> None
+    
+    Set network Description
+
+Help on method set_discretization_sample_count in module pysmile:
+
+set_discretization_sample_count(...) method of pysmile.Network instance
+    set_discretization_sample_count(self: pysmile.Network, discretization_sample_count: int) -> None
+    
+    Set Discretization Sample Count
+
+Help on method set_evidence in module pysmile:
+
+set_evidence(...) method of pysmile.Network instance
+    set_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_evidence(self: pysmile.Network, node_handle: int, evidence_number: int) -> None
+    
+    Set evidence on node, node selector - node handle, evidence selector - evidence number
+    
+    2. set_evidence(self: pysmile.Network, node_handle: int, evidence_id: str) -> None
+    
+    Set evidence on node, node selector - node handle, evidence selector - evidence id
+    
+    3. set_evidence(self: pysmile.Network, node_id: str, evidence_number: int) -> None
+    
+    Set evidence on node, node selector - node id, evidence selector - evidence number
+    
+    4. set_evidence(self: pysmile.Network, node_id: str, evidence_id: str) -> None
+    
+    Set evidence on node, node selector - node id, evidence selector - evidence id
+
+Help on method set_ext_functions in module pysmile:
+
+set_ext_functions(...) method of pysmile.Network instance
+    set_ext_functions(self: pysmile.Network, external_functions: List[str]) -> None
+    
+    Set external functions
+
+Help on method set_fault_outcome in module pysmile:
+
+set_fault_outcome(...) method of pysmile.Network instance
+    set_fault_outcome(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_fault_outcome(self: pysmile.Network, node_handle: int, outcome_index: int, fault: bool) -> None
+    
+    2. set_fault_outcome(self: pysmile.Network, node_id: str, outcome_index: int, fault: bool) -> None
+    
+    3. set_fault_outcome(self: pysmile.Network, node_handle: int, outcome_id: str, fault: bool) -> None
+    
+    4. set_fault_outcome(self: pysmile.Network, node_id: str, outcome_id: str, fault: bool) -> None
+
+Help on method set_id in module pysmile:
+
+set_id(...) method of pysmile.Network instance
+    set_id(self: pysmile.Network, new_id: str) -> None
+    
+    Set network ID
+
+Help on method set_influence_diagram_algorithm in module pysmile:
+
+set_influence_diagram_algorithm(...) method of pysmile.Network instance
+    set_influence_diagram_algorithm(self: pysmile.Network, influence_diagram_algorithm: pysmile.InfluenceDiagramAlgorithmType) -> None
+    
+    Set Influence Diagram Algorithm
+
+Help on method set_intervals in module pysmile:
+
+set_intervals(...) method of pysmile.Network instance
+    set_intervals(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_intervals(self: pysmile.Network, node_handle: int, intervals: List[float], remove_ids: bool) -> None
+    
+    2. set_intervals(self: pysmile.Network, node_id: str, intervals: List[float], remove_ids: bool) -> None
+
+Help on method set_mandatory in module pysmile:
+
+set_mandatory(...) method of pysmile.Network instance
+    set_mandatory(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_mandatory(self: pysmile.Network, node_handle: int, mandatory: bool) -> None
+    
+    2. set_mandatory(self: pysmile.Network, node_id: str, mandatory: bool) -> None
+
+Help on method set_mau_expressions in module pysmile:
+
+set_mau_expressions(...) method of pysmile.Network instance
+    set_mau_expressions(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_mau_expressions(self: pysmile.Network, node_handle: int, expressions: List[str]) -> None
+    
+    2. set_mau_expressions(self: pysmile.Network, node_id: str, expressions: List[str]) -> None
+
+Help on method set_name in module pysmile:
+
+set_name(...) method of pysmile.Network instance
+    set_name(self: pysmile.Network, new_name: str) -> None
+    
+    Set network Name
+
+Help on method set_node_bg_color in module pysmile:
+
+set_node_bg_color(...) method of pysmile.Network instance
+    set_node_bg_color(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_bg_color(self: pysmile.Network, node_handle: int, color: int) -> None
+    
+    2. set_node_bg_color(self: pysmile.Network, node_id: str, color: int) -> None
+
+Help on method set_node_border_color in module pysmile:
+
+set_node_border_color(...) method of pysmile.Network instance
+    set_node_border_color(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_border_color(self: pysmile.Network, node_handle: int, color: int) -> None
+    
+    2. set_node_border_color(self: pysmile.Network, node_id: str, color: int) -> None
+
+Help on method set_node_border_width in module pysmile:
+
+set_node_border_width(...) method of pysmile.Network instance
+    set_node_border_width(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_border_width(self: pysmile.Network, node_handle: int, width: int) -> None
+    
+    2. set_node_border_width(self: pysmile.Network, node_id: str, width: int) -> None
+
+Help on method set_node_chart_enabled in module pysmile:
+
+set_node_chart_enabled(...) method of pysmile.Network instance
+    set_node_chart_enabled(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_chart_enabled(self: pysmile.Network, node_handle: int, enabled: bool) -> None
+    
+    Set Node Chart Enabled
+    
+    2. set_node_chart_enabled(self: pysmile.Network, node_id: str, enabled: bool) -> None
+    
+    Set Node Chart Enabled
+
+Help on method set_node_chart_size in module pysmile:
+
+set_node_chart_size(...) method of pysmile.Network instance
+    set_node_chart_size(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_chart_size(self: pysmile.Network, node_handle: int, width: int, height: int) -> None
+    
+    Set Node Chart Size
+    
+    2. set_node_chart_size(self: pysmile.Network, node_id: str, width: int, height: int) -> None
+    
+    Set Node Chart Size
+
+Help on method set_node_cost in module pysmile:
+
+set_node_cost(...) method of pysmile.Network instance
+    set_node_cost(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_cost(self: pysmile.Network, node_handle: int, cost: List[float]) -> None
+    
+    2. set_node_cost(self: pysmile.Network, node_id: str, cost: List[float]) -> None
+
+Help on method set_node_definition in module pysmile:
+
+set_node_definition(...) method of pysmile.Network instance
+    set_node_definition(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_definition(self: pysmile.Network, node_handle: int, node_definition: List[float]) -> None
+    
+    Set Node Definition by node handle
+    
+    2. set_node_definition(self: pysmile.Network, node_id: str, node_definition: List[float]) -> None
+    
+    Set Node Definition by node ID
+
+Help on method set_node_description in module pysmile:
+
+set_node_description(...) method of pysmile.Network instance
+    set_node_description(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_description(self: pysmile.Network, node_handle: int, new_node_description: str) -> None
+    
+    Set Node Description by node handle
+    
+    2. set_node_description(self: pysmile.Network, node_id: str, new_node_description: str) -> None
+    
+    Set Node Description by node ID
+
+Help on method set_node_diag_type in module pysmile:
+
+set_node_diag_type(...) method of pysmile.Network instance
+    set_node_diag_type(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_diag_type(self: pysmile.Network, node_handle: int, type: pysmile.NodeDiagType) -> None
+    
+    2. set_node_diag_type(self: pysmile.Network, node_id: str, type: pysmile.NodeDiagType) -> None
+
+Help on method set_node_documentation in module pysmile:
+
+set_node_documentation(...) method of pysmile.Network instance
+    set_node_documentation(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_documentation(self: pysmile.Network, node_handle: int, documentation: List[pysmile.DocItemInfo]) -> None
+    
+    2. set_node_documentation(self: pysmile.Network, node_id: str, documentation: List[pysmile.DocItemInfo]) -> None
+
+Help on method set_node_equation in module pysmile:
+
+set_node_equation(...) method of pysmile.Network instance
+    set_node_equation(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_equation(self: pysmile.Network, node_handle: int, equation: str) -> None
+    
+    2. set_node_equation(self: pysmile.Network, node_id: str, equation: str) -> None
+
+Help on method set_node_equation_bounds in module pysmile:
+
+set_node_equation_bounds(...) method of pysmile.Network instance
+    set_node_equation_bounds(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_equation_bounds(self: pysmile.Network, node_handle: int, lo: float, hi: float) -> None
+    
+    2. set_node_equation_bounds(self: pysmile.Network, node_id: str, lo: float, hi: float) -> None
+
+Help on method set_node_equation_discretization in module pysmile:
+
+set_node_equation_discretization(...) method of pysmile.Network instance
+    set_node_equation_discretization(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_equation_discretization(self: pysmile.Network, node_handle: int, intervals: List[pysmile.DiscretizationInterval]) -> None
+    
+    2. set_node_equation_discretization(self: pysmile.Network, node_id: str, intervals: List[pysmile.DiscretizationInterval]) -> None
+
+Help on method set_node_id in module pysmile:
+
+set_node_id(...) method of pysmile.Network instance
+    set_node_id(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_id(self: pysmile.Network, node_handle: int, new_id: str) -> None
+    
+    Set node ID by node handle
+    
+    2. set_node_id(self: pysmile.Network, old_id: str, new_id: str) -> None
+    
+    Set node ID by old ID
+
+Help on method set_node_name in module pysmile:
+
+set_node_name(...) method of pysmile.Network instance
+    set_node_name(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_name(self: pysmile.Network, arg0: int, arg1: str) -> None
+    
+    Set node name by handle
+    
+    2. set_node_name(self: pysmile.Network, arg0: str, arg1: str) -> None
+    
+    Set node name by node ID
+
+Help on method set_node_position in module pysmile:
+
+set_node_position(...) method of pysmile.Network instance
+    set_node_position(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_position(self: pysmile.Network, node_handle: int, x: int, y: int, width: int, height: int) -> None
+    
+    2. set_node_position(self: pysmile.Network, node_id: str, x: int, y: int, width: int, height: int) -> None
+    
+    3. set_node_position(self: pysmile.Network, node_handle: int, rect: List[int]) -> None
+    
+    4. set_node_position(self: pysmile.Network, node_id: str, rect: List[int]) -> None
+
+Help on method set_node_question in module pysmile:
+
+set_node_question(...) method of pysmile.Network instance
+    set_node_question(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_question(self: pysmile.Network, node_handle: int, question: str) -> None
+    
+    2. set_node_question(self: pysmile.Network, node_id: str, question: str) -> None
+
+Help on method set_node_temporal_definition in module pysmile:
+
+set_node_temporal_definition(...) method of pysmile.Network instance
+    set_node_temporal_definition(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_temporal_definition(self: pysmile.Network, node_handle: int, order: int, definition: List[float]) -> None
+    
+    2. set_node_temporal_definition(self: pysmile.Network, node_id: str, order: int, definition: List[float]) -> None
+
+Help on method set_node_temporal_type in module pysmile:
+
+set_node_temporal_type(...) method of pysmile.Network instance
+    set_node_temporal_type(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_temporal_type(self: pysmile.Network, node_handle: int, temporal_type: pysmile.NodeTemporalType) -> None
+    
+    2. set_node_temporal_type(self: pysmile.Network, node_id: str, temporal_type: pysmile.NodeTemporalType) -> None
+
+Help on method set_node_text_color in module pysmile:
+
+set_node_text_color(...) method of pysmile.Network instance
+    set_node_text_color(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_text_color(self: pysmile.Network, node_handle: int, color: int) -> None
+    
+    2. set_node_text_color(self: pysmile.Network, node_id: str, color: int) -> None
+
+Help on method set_node_type in module pysmile:
+
+set_node_type(...) method of pysmile.Network instance
+    set_node_type(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_type(self: pysmile.Network, node_handle: int, new_node_type: int) -> None
+    
+    Set Node Type by node handle
+    
+    2. set_node_type(self: pysmile.Network, node_id: str, new_node_type: int) -> None
+    
+    Set Node Type by node ID
+
+Help on method set_node_user_properties in module pysmile:
+
+set_node_user_properties(...) method of pysmile.Network instance
+    set_node_user_properties(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_node_user_properties(self: pysmile.Network, node_handle: int, properties: List[pysmile.UserProperty]) -> None
+    
+    2. set_node_user_properties(self: pysmile.Network, node_id: str, properties: List[pysmile.UserProperty]) -> None
+
+Help on method set_noisy_decomposition_enabled in module pysmile:
+
+set_noisy_decomposition_enabled(...) method of pysmile.Network instance
+    set_noisy_decomposition_enabled(self: pysmile.Network, enabled: bool) -> None
+    
+    Set Noisy Decomposition Enabled
+
+Help on method set_noisy_decomposition_limit in module pysmile:
+
+set_noisy_decomposition_limit(...) method of pysmile.Network instance
+    set_noisy_decomposition_limit(self: pysmile.Network, limit: int) -> None
+    
+    Set Noisy Decomposition Limit
+
+Help on method set_noisy_parent_strengths in module pysmile:
+
+set_noisy_parent_strengths(...) method of pysmile.Network instance
+    set_noisy_parent_strengths(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_noisy_parent_strengths(self: pysmile.Network, node_handle: int, parent_index: int, strengths: List[int]) -> None
+    
+    2. set_noisy_parent_strengths(self: pysmile.Network, node_id: str, parent_index: int, strengths: List[int]) -> None
+    
+    3. set_noisy_parent_strengths(self: pysmile.Network, node_handle: int, parent_id: str, strengths: List[int]) -> None
+    
+    4. set_noisy_parent_strengths(self: pysmile.Network, node_id: str, parent_id: str, strengths: List[int]) -> None
+
+Help on method set_noisy_synchronized in module pysmile:
+
+set_noisy_synchronized(...) method of pysmile.Network instance
+    set_noisy_synchronized(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_noisy_synchronized(self: pysmile.Network, node_handle: int, enable: bool) -> None
+    
+    2. set_noisy_synchronized(self: pysmile.Network, node_id: str, enable: bool) -> None
+
+Help on method set_noisy_temporal_parent_strengths in module pysmile:
+
+set_noisy_temporal_parent_strengths(...) method of pysmile.Network instance
+    set_noisy_temporal_parent_strengths(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_noisy_temporal_parent_strengths(self: pysmile.Network, node_handle: int, order: int, strengths: List[List[int]]) -> None
+    
+    2. set_noisy_temporal_parent_strengths(self: pysmile.Network, node_id: str, order: int, strengths: List[List[int]]) -> None
+
+Help on method set_outcome_description in module pysmile:
+
+set_outcome_description(...) method of pysmile.Network instance
+    set_outcome_description(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_outcome_description(self: pysmile.Network, node_handle: int, outcome_index: int, description: str) -> None
+    
+    2. set_outcome_description(self: pysmile.Network, node_id: str, outcome_index: int, description: str) -> None
+    
+    3. set_outcome_description(self: pysmile.Network, node_handle: int, outcome_id: str, description: str) -> None
+    
+    4. set_outcome_description(self: pysmile.Network, node_id: str, outcome_id: str, description: str) -> None
+
+Help on method set_outcome_documentation in module pysmile:
+
+set_outcome_documentation(...) method of pysmile.Network instance
+    set_outcome_documentation(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_outcome_documentation(self: pysmile.Network, node_handle: int, outcome_index: int, documentation: List[pysmile.DocItemInfo]) -> None
+    
+    2. set_outcome_documentation(self: pysmile.Network, node_handle: int, outcome_id: str, documentation: List[pysmile.DocItemInfo]) -> None
+    
+    3. set_outcome_documentation(self: pysmile.Network, node_id: str, outcome_id: str, documentation: List[pysmile.DocItemInfo]) -> None
+    
+    4. set_outcome_documentation(self: pysmile.Network, node_id: str, outcome_index: int, documentation: List[pysmile.DocItemInfo]) -> None
+
+Help on method set_outcome_fix in module pysmile:
+
+set_outcome_fix(...) method of pysmile.Network instance
+    set_outcome_fix(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_outcome_fix(self: pysmile.Network, node_handle: int, outcome_index: int, treatment: str) -> None
+    
+    2. set_outcome_fix(self: pysmile.Network, node_id: str, outcome_index: int, treatment: str) -> None
+    
+    3. set_outcome_fix(self: pysmile.Network, node_handle: int, outcome_id: str, treatment: str) -> None
+    
+    4. set_outcome_fix(self: pysmile.Network, node_id: str, outcome_id: str, treatment: str) -> None
+
+Help on method set_outcome_id in module pysmile:
+
+set_outcome_id(...) method of pysmile.Network instance
+    set_outcome_id(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_outcome_id(self: pysmile.Network, node_handle: int, old_outcome_id: str, new_outcome_id: str) -> None
+    
+    SetOutcomeId by node handle and outcome ID
+    
+    2. set_outcome_id(self: pysmile.Network, node_id: str, old_outcome_id: str, new_outcome_id: str) -> None
+    
+    SetOutcomeId by node ID and outcome ID
+    
+    3. set_outcome_id(self: pysmile.Network, node_handle: int, outcome_index: int, new_outcome_id: str) -> None
+    
+    SetOutcomeId by node handle and outcome index
+    
+    4. set_outcome_id(self: pysmile.Network, node_id: str, outcome_index: int, new_outcome_id: str) -> None
+    
+    SetOutcomeId by node ID and outcome index
+
+Help on method set_outcome_label in module pysmile:
+
+set_outcome_label(...) method of pysmile.Network instance
+    set_outcome_label(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_outcome_label(self: pysmile.Network, node_handle: int, outcome_index: int, label: str) -> None
+    
+    2. set_outcome_label(self: pysmile.Network, node_id: str, outcome_index: int, label: str) -> None
+    
+    3. set_outcome_label(self: pysmile.Network, node_handle: int, outcome_id: str, label: str) -> None
+    
+    4. set_outcome_label(self: pysmile.Network, node_id: str, outcome_id: str, label: str) -> None
+
+Help on method set_outlier_rejection_enabled in module pysmile:
+
+set_outlier_rejection_enabled(...) method of pysmile.Network instance
+    set_outlier_rejection_enabled(self: pysmile.Network, enable: bool) -> None
+    
+    Set Outlier Rejection Enabled
+
+Help on method set_point_values in module pysmile:
+
+set_point_values(...) method of pysmile.Network instance
+    set_point_values(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_point_values(self: pysmile.Network, node_handle: int, point_values: List[float]) -> None
+    
+    2. set_point_values(self: pysmile.Network, node_id: str, point_values: List[float]) -> None
+
+Help on method set_rand_seed in module pysmile:
+
+set_rand_seed(...) method of pysmile.Network instance
+    set_rand_seed(self: pysmile.Network, arg0: int) -> None
+
+Help on method set_ranked in module pysmile:
+
+set_ranked(...) method of pysmile.Network instance
+    set_ranked(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_ranked(self: pysmile.Network, node_handle: int, ranked: bool) -> None
+    
+    2. set_ranked(self: pysmile.Network, node_id: str, ranked: bool) -> None
+
+Help on method set_relevance_enabled in module pysmile:
+
+set_relevance_enabled(...) method of pysmile.Network instance
+    set_relevance_enabled(self: pysmile.Network, enable: bool) -> None
+    
+    Set Relevance Enabled
+
+Help on method set_sample_count in module pysmile:
+
+set_sample_count(...) method of pysmile.Network instance
+    set_sample_count(self: pysmile.Network, sample_count: int) -> None
+    
+    Set Sample Count
+
+Help on method set_slice_count in module pysmile:
+
+set_slice_count(...) method of pysmile.Network instance
+    set_slice_count(self: pysmile.Network, slice_count: int) -> None
+
+Help on method set_submodel_description in module pysmile:
+
+set_submodel_description(...) method of pysmile.Network instance
+    set_submodel_description(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_submodel_description(self: pysmile.Network, handle: int, descrption: str) -> None
+    
+    2. set_submodel_description(self: pysmile.Network, id: str, descrption: str) -> None
+
+Help on method set_submodel_id in module pysmile:
+
+set_submodel_id(...) method of pysmile.Network instance
+    set_submodel_id(self: pysmile.Network, handle: int, id: str) -> None
+
+Help on method set_submodel_name in module pysmile:
+
+set_submodel_name(...) method of pysmile.Network instance
+    set_submodel_name(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_submodel_name(self: pysmile.Network, handle: int, name: str) -> None
+    
+    2. set_submodel_name(self: pysmile.Network, id: str, name: str) -> None
+
+Help on method set_submodel_of_node in module pysmile:
+
+set_submodel_of_node(...) method of pysmile.Network instance
+    set_submodel_of_node(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_submodel_of_node(self: pysmile.Network, submodel_handle: int, node_handle: int) -> None
+    
+    2. set_submodel_of_node(self: pysmile.Network, submodel_id: str, node_id: str) -> None
+
+Help on method set_submodel_of_submodel in module pysmile:
+
+set_submodel_of_submodel(...) method of pysmile.Network instance
+    set_submodel_of_submodel(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_submodel_of_submodel(self: pysmile.Network, parent_handle: int, child_handle: int) -> None
+    
+    2. set_submodel_of_submodel(self: pysmile.Network, parent_id: str, child_id: str) -> None
+
+Help on method set_submodel_position in module pysmile:
+
+set_submodel_position(...) method of pysmile.Network instance
+    set_submodel_position(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_submodel_position(self: pysmile.Network, submodel_handle: int, x: int, y: int, width: int, height: int) -> None
+    
+    2. set_submodel_position(self: pysmile.Network, submodel_id: str, x: int, y: int, width: int, height: int) -> None
+    
+    3. set_submodel_position(self: pysmile.Network, submodel_handle: int, rect: List[int]) -> None
+    
+    4. set_submodel_position(self: pysmile.Network, submodel_id: str, rect: List[int]) -> None
+
+Help on method set_target in module pysmile:
+
+set_target(...) method of pysmile.Network instance
+    set_target(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_target(self: pysmile.Network, node_handle: int, is_target: bool) -> None
+    
+    2. set_target(self: pysmile.Network, node_id: str, is_target: bool) -> None
+
+Help on method set_temporal_evidence in module pysmile:
+
+set_temporal_evidence(...) method of pysmile.Network instance
+    set_temporal_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_temporal_evidence(self: pysmile.Network, node_handle: int, slice: int, outcome_index: int) -> None
+    
+    2. set_temporal_evidence(self: pysmile.Network, node_id: str, slice: int, outcome_index: int) -> None
+    
+    3. set_temporal_evidence(self: pysmile.Network, node_handle: int, slice: int, outcome_id: str) -> None
+    
+    4. set_temporal_evidence(self: pysmile.Network, node_id: str, slice: int, outcome_id: str) -> None
+
+Help on method set_temporal_virtual_evidence in module pysmile:
+
+set_temporal_virtual_evidence(...) method of pysmile.Network instance
+    set_temporal_virtual_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_temporal_virtual_evidence(self: pysmile.Network, node_handle: int, slice: int, evidence_definition: List[float]) -> None
+    
+    2. set_temporal_virtual_evidence(self: pysmile.Network, node_id: str, slice: int, evidence_definition: List[float]) -> None
+
+Help on method set_user_properties in module pysmile:
+
+set_user_properties(...) method of pysmile.Network instance
+    set_user_properties(self: pysmile.Network, properties: List[pysmile.UserProperty]) -> None
+
+Help on method set_virtual_evidence in module pysmile:
+
+set_virtual_evidence(...) method of pysmile.Network instance
+    set_virtual_evidence(*args, **kwargs)
+    Overloaded function.
+    
+    1. set_virtual_evidence(self: pysmile.Network, node_handle: int, evidence: List[float]) -> None
+    
+    2. set_virtual_evidence(self: pysmile.Network, node_id: str, evidence: List[float]) -> None
+
+Help on method set_zero_avoidance_enabled in module pysmile:
+
+set_zero_avoidance_enabled(...) method of pysmile.Network instance
+    set_zero_avoidance_enabled(self: pysmile.Network, enable: bool) -> None
+    
+    Set Zero Avoidance Enabled
+
+Help on method temporal_arc_exists in module pysmile:
+
+temporal_arc_exists(...) method of pysmile.Network instance
+    temporal_arc_exists(*args, **kwargs)
+    Overloaded function.
+    
+    1. temporal_arc_exists(self: pysmile.Network, parent_handle: int, child_handle: int, order: int) -> bool
+    
+    2. temporal_arc_exists(self: pysmile.Network, parent_id: str, child_id: str, order: int) -> bool
+
+Help on method unroll in module pysmile:
+
+unroll(...) method of pysmile.Network instance
+    unroll(self: pysmile.Network) -> pysmile.UnrollResults
+
+Help on method update_beliefs in module pysmile:
+
+update_beliefs(...) method of pysmile.Network instance
+    update_beliefs(self: pysmile.Network) -> None
+
+Help on method write_file in module pysmile:
+
+write_file(...) method of pysmile.Network instance
+    write_file(self: pysmile.Network, xdsl_file: str) -> None
+    
+    Write xdsl file
+
+Help on method write_string in module pysmile:
+
+write_string(...) method of pysmile.Network instance
+    write_string(self: pysmile.Network) -> str
+    
+    Write string
+

@@ -1,0 +1,12 @@
+====================================
+Time step: 1
+attacker capability: 0.0
+effectiveness defend: 0.0043
+sytem likelihood: 0.5051
+apt risk: 0.5115000000000001
+====================================
+Time step: 2
+attacker capability: 0.0
+effectiveness defend: 0.0034000000000000002
+sytem likelihood: 0.5051
+apt risk: 0.49760000000000004

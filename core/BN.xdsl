@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Node_1">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>1 0</probabilities>
+		</cpt>
+		<cpt id="Node_2">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_1</parents>
+			<probabilities>0.7 0.3 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_4">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>1 0</probabilities>
+		</cpt>
+		<cpt id="Node_0">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.15 0.85</probabilities>
+		</cpt>
+		<cpt id="Node_7">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Node_8">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Node_9">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Node_10">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Node_11">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<equation id="Node_12">
+			<parents>Node_8 Node_9 Node_11</parents>
+			<definition lower="0" upper="1">Node_12=TruncNormal((1*Node_8+1*Node_9+1*Node_11)/3,0.001,0,1)</definition>
+			<discretization>
+				<interval upper="0.2" />
+				<interval upper="0.4" />
+				<interval upper="0.6" />
+				<interval upper="0.8" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="Node_13">
+			<parents>Node_7 Node_10</parents>
+			<definition lower="0" upper="1">Node_13=TruncNormal((1*Node_7+1*Node_10)/2,0.001,0,1)</definition>
+			<discretization>
+				<interval upper="0.2" />
+				<interval upper="0.4" />
+				<interval upper="0.6" />
+				<interval upper="0.8" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="Node_14">
+			<parents>Node_12 Node_13</parents>
+			<definition lower="0" upper="1">Node_14=TruncNormal((1*Node_12+1*Node_13)/2,0.001,0,1)</definition>
+			<discretization>
+				<interval upper="0.5" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<cpt id="Node_15">
+			<state id="not_enough" />
+			<state id="enough" />
+			<parents>Node_14</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Node_16">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Node_17">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Node_18">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Node_19">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<cpt id="Node_20">
+			<state id="Very_low" />
+			<state id="Low" />
+			<state id="Medium" />
+			<state id="High" />
+			<state id="Very_High" />
+			<intervals>0 0.2 0.4 0.6 0.8 1</intervals>
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<equation id="Node_21">
+			<parents>Node_16 Node_19</parents>
+			<definition lower="0" upper="1">Node_21=TruncNormal((1*Node_16+1*Node_19)/2,0.001,0,1)</definition>
+			<discretization>
+				<interval upper="0.2" />
+				<interval upper="0.4" />
+				<interval upper="0.6" />
+				<interval upper="0.8" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="Node_22">
+			<parents>Node_17 Node_18 Node_20</parents>
+			<definition lower="0" upper="1">Node_22=TruncNormal((1*Node_17+1*Node_18+1*Node_20)/3,0.001,0,1)</definition>
+			<discretization>
+				<interval upper="0.2" />
+				<interval upper="0.4" />
+				<interval upper="0.6" />
+				<interval upper="0.8" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="Node_23">
+			<parents>Node_21 Node_22</parents>
+			<definition lower="0" upper="1">Node_23=TruncNormal((1*Node_21+1*Node_22)/2,0.001,0,1)</definition>
+			<discretization>
+				<interval upper="0.5" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<cpt id="Node_24">
+			<state id="not_effective" />
+			<state id="effective" />
+			<parents>Node_23</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="risk">
+			<state id="True" />
+			<state id="False" />
+			<parents>Node_0 Node_15 Node_24</parents>
+			<probabilities>1 0 0 1 1 0 1 0 0 1 0 1 0 1 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 4.0.2423.0 ACADEMIC" name="Network1">
+			<node id="Node_0">
+				<name>System</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>748 261 824 297</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_1">
+				<name>Attacker_Internet_0</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>283 35 359 71</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_2">
+				<name>CVE-2022-29885_63f046b807bc0febdb8b3f73</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>512 31 588 67</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_4">
+				<name>CVE-2022-27385_63f047b007bc0febdb8b3f75</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>746 32 822 68</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_7">
+				<name>Elapsed_time</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>47 196 123 232</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Node_8">
+				<name>Specialist_expertise</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>48 327 124 363</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Node_9">
+				<name>Knowledge_of_system</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>44 455 120 491</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Node_10">
+				<name>Window_of_opportunity</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>47 57 123 93</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Node_11">
+				<name>Required_equipment_and_tools</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>42 582 118 618</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Node_12">
+				<name>Mean</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>270 529 346 565</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Node_13">
+				<name>Opportunity</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>268 197 344 233</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Node_14">
+				<name>AttackCapability</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>268 350 344 386</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Node_15">
+				<name>attack_capability_cpt</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>503 406 579 442</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node_16">
+				<name>Security_Awareness_Training</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1555 608 1631 644</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Node_17">
+				<name>Security_Monitoring</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1539 313 1615 349</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Node_18">
+				<name>Vulnerability_Management</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1535 179 1611 215</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Node_19">
+				<name>Incident_Response_Plan</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1549 455 1625 491</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Node_20">
+				<name>Log_Management</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1532 48 1608 84</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Node_21">
+				<name>organizational</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1296 568 1372 604</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Node_22">
+				<name>technical</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1286 219 1362 255</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Node_23">
+				<name>EffectivenessDefend</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1292 410 1368 446</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="Node_24">
+				<name>effectiveness_defend_cpt</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1014 402 1090 438</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="risk">
+				<name>risk</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>758 401 796 424</position>
+				<barchart active="true" />
+			</node>
+		</genie>
+	</extensions>
+</smile>
